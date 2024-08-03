@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>我的第二篇文章</title>
-    <url>/2024/08/03/second/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="你好吗？"><a href="#你好吗？" class="headerlink" title="你好吗？"></a>你好吗？</h3><h3 id="我很好！"><a href="#我很好！" class="headerlink" title="我很好！"></a>我很好！</h3>]]></content>
-  </entry>
-  <entry>
-    <title>我的第一篇文章</title>
-    <url>/2024/08/02/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的第一个文章o"><a href="#我的第一个文章o" class="headerlink" title="我的第一个文章o"></a>我的第一个文章o</h1><h2 id="欢迎欢迎"><a href="#欢迎欢迎" class="headerlink" title="欢迎欢迎"></a>欢迎欢迎</h2><h3 id="很高兴"><a href="#很高兴" class="headerlink" title="很高兴"></a>很高兴</h3><h4 id="你好鸭"><a href="#你好鸭" class="headerlink" title="你好鸭"></a>你好鸭</h4>]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>我的第二篇文章</title>
+      <link href="/2024/08/03/second/"/>
+      <url>/2024/08/03/second/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="你好吗？"><a href="#你好吗？" class="headerlink" title="你好吗？"></a>你好吗？</h3><h3 id="我很好！"><a href="#我很好！" class="headerlink" title="我很好！"></a>我很好！</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇文章</title>
+      <link href="/2024/08/02/hello-world/"/>
+      <url>/2024/08/02/hello-world/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我的第一个文章o"><a href="#我的第一个文章o" class="headerlink" title="我的第一个文章o"></a>我的第一个文章o</h1><h2 id="欢迎欢迎"><a href="#欢迎欢迎" class="headerlink" title="欢迎欢迎"></a>欢迎欢迎</h2><h3 id="很高兴"><a href="#很高兴" class="headerlink" title="很高兴"></a>很高兴</h3><h4 id="你好鸭"><a href="#你好鸭" class="headerlink" title="你好鸭"></a>你好鸭</h4>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
