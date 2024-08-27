@@ -1,626 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>BUAA-SUMMER-PYTHON 第一次课上作业</title>
-    <url>/2024/08/02/Summer_Python_1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这是2024-BUAA-Python 课程的一些经验分享。<br>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p>
-<h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><ul>
-<li><p>Which option is the result of  100//3?<br>A. 33<br>B. 34<br>C. 33.333333333333333<br>D. 0.333333333333333</p>
-</li>
-<li><p>x is a two-digit integer variable. Which statement swaps its tens and units digits?<br>A (x%10)<em>10+x%10<br>B (x%10)</em>10+x//10<br>C (x/10)%10+x%10<br>D (x/10)%10+x//10</p>
-</li>
-<li><p>The output of the following code is （）;</p>
- <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a,b,c,d,e,f = &#x27;Python&#x27;</span><br><span class="line">b = </span><br></pre></td></tr></table></figure>
-<p>  A.1<br>  B.0<br>  C.Error<br>  D.’y’</p>
-</li>
-<li><p>Which of the following statements is illegal in Python ()?<br>  A. x = y = z = 1<br>  B. x = (y = z + 1)<br>  C. x, y = y, x<br>  D. x += y</p>
-</li>
-<li><p>Which of the following statements about Python’s floating-point type is wrong ?</p>
-<p>  A. There are two ways to represent floating-point numbers: decimal notation and scientific notation</p>
-<p>  B. The floating-point type is consistent with the concept of real numbers in mathematics, representing values with decimals</p>
-<p>  C. sys.float_info can list in detail the floating-point parameters of the system where the Python interpreter runs</p>
-<p>  D. Floating-point numbers in the Python language can be without decimals</p>
-</li>
-</ul>
-<h3 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h3><ol>
-<li><p>The result of the Python statement ‘’.join(list(‘hello BUAA!’)) is<em>__</em>!     </p>
-</li>
-<li><p>In Python, modules can be imported using the keyword       <em>_</em> .</p>
-</li>
-<li><p>In Python, statement blocks are divided by <em>_</em>. (indentation/brace/line breaks)</p>
-</li>
-<li><p>The output of excuting the code blow is <em>__</em><br> tmp = ‘ab’ + ‘c’*2<br> print(tmp)</p>
-</li>
-<li>Consider the following code snippet:<br>x = [1, 2, 3, 4]<br>y = [num * 2 for num in x]<br>The value of y after execution is <em>_</em>   .</li>
-</ol>
-<h3 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h3><ol>
-<li>平方和<br>【Description】<br>The user inputs a positive integer n . Calculate the sum of squares from 1 to n  (1^2 + 2^2 + ….+ n^2).<br>【Input】<br>A line contains an integer n.<br>【Output】<br>The result of the sum of squares from 1 to n<br>【Examples Input】<br>3<br>【Examples output】<br>14<br>【Example description】<br>1^2 + 2^2 + 3^2 = 14<br>【Notes】<br>For 100% of test cases, a,b in [1, 10000].</li>
-<li><p>Calculate GPA<br> 【Problem Description】<br> Li Hua is a student of Beihang University. Can you help him calculate his GPA this semester using Python?</p>
-<p> To calculate GPA, you need to use the following method:<br> First, ignore all courses with less than 1 credit (not including 1).<br> Then, calculate the grade point for each course: Assume x is the original score of the course,<br>$GP = \begin{cases}<br>4 - 3 \cdot \frac{(100-x)^2}{1600} &amp; \text{if } x \geq 60 \<br>\newline<br>0 &amp; \text{if } 0 \leq x &lt; 60<br>\end{cases}$<br> Next, you need to know how many credits were given for each courses.<br> After calculating all the steps above, you need to calculate $ GPA = \frac {\sum(GP_i * Gredit_i)}{\sum Gredit_i} $, where credit and GP is given above.<br> 【Input】<br> First line, an integer N, tells how many courses Li Hua has taken this semester.<br> Then followed by two lines, each line 2 numbers (integer or float) X C separated by space. The first integer X is the original score of the course, and the second num C is the credit for the course.<br> 【Output】<br> A floating point rounded to 2 decimals, which is the GPA.<br> 【Sample Input】<br> 4<br> 100 1<br> 60 1<br> 0 1<br> 90 0.2<br> 【Sample Output】<br> 1.67<br> 【Sample Description】<br> The first course has a GP of 4.0, the second course has a GP of 1.0, and the third course has a GP of 0. The fourth course does not count at all.<br> GPA=(4.0+1.0+0)/(1+1+1)=1.67<br> 【Data】<br> 1&lt;=N&lt;=1000, N is integer.<br> 0&lt;=X&lt;=100, X is integer.<br> 0&lt;=C&lt;=6, C is float or integer.<br> All data satisfy that there is at least one class has more than 1 credit.</p>
-</li>
-</ol>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>BUAA-SUMMER-PYTHON 第一次课下作业</title>
+      <link href="/2024/08/26/MySQL%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+      <url>/2024/08/26/MySQL%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul><li><p>MySQL的注释：<br>  单行注释： <code>--</code>或者<code>#</code><br>  多行注释： <code>/**/</code></p></li><li><p>备注：<br>  <code>[ ]</code>表示可选择，可有可没有</p></li></ul><div class="table-container"><table><thead><tr><th>分类</th><th>全称</th><th>说明</th></tr></thead><tbody><tr><td>DDL</td><td>Data Definition Language</td><td>数据定义语言，用来定义数据库对象</td></tr><tr><td>DML</td><td>Data Manipulation Language</td><td>数据操作语言，用来对数据库表中的数据进行增删改</td></tr><tr><td>DQL</td><td>Data Query Language</td><td>数据查询语言，用于查询数据库中表的信息</td></tr><tr><td>DCL</td><td>Data Control Language</td><td>数据控制语言，用于创建数据库用户、控制数据库的访问权限</td></tr></tbody></table></div><h2 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h2><blockquote><p>DDL:数据定义语言，用于对数据库中的数据对象的组成和结构进行定义。</p><h3 id="操作数据库"><a href="#操作数据库" class="headerlink" title="操作数据库"></a>操作数据库</h3><h4 id="查询数据库"><a href="#查询数据库" class="headerlink" title="查询数据库"></a>查询数据库</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 查询M有<span class="keyword">SQL</span>中所有的数据库</span><br><span class="line"><span class="keyword">SHOW</span> DATABASES;</span><br><span class="line">#<span class="number">2.</span> 查询当前正在使用的数据库</span><br><span class="line">SELECGT DATABASE();</span><br></pre></td></tr></table></figure><h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 无需判断的创建（如果出现同名的数据库，则会报错）</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE EXAMPLE;</span><br><span class="line">#<span class="number">2.</span> 判断并创建（如果不存在，则创建；反之，不创建）</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> EXAMPLE;</span><br><span class="line">#<span class="number">3.</span> 创建数据库，并指定字符集</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE iteima <span class="keyword">default</span> charset utf8mb4;</span><br></pre></td></tr></table></figure></blockquote><h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 无需判断的删除(如果数据库存在，则删除；反之报错)</span><br><span class="line"><span class="keyword">DROP</span> DATABASE EXAMPLE;</span><br><span class="line">#<span class="number">2.</span> 判断并删除（如果存在，则删除；反值，不操作）</span><br><span class="line"><span class="keyword">DROP</span> DATABASE IF <span class="keyword">EXISTS</span> EXAMPLE;</span><br></pre></td></tr></table></figure><h4 id="使用数据库"><a href="#使用数据库" class="headerlink" title="使用数据库"></a>使用数据库</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 切换到数据库中的某一个</span><br><span class="line">USE EXAMPLE;</span><br></pre></td></tr></table></figure><h3 id="操作TAbLE"><a href="#操作TAbLE" class="headerlink" title="操作TAbLE"></a>操作TAbLE</h3><h4 id="查询表"><a href="#查询表" class="headerlink" title="查询表"></a>查询表</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 查询当前数据库中的所有表</span><br><span class="line"><span class="keyword">SHOW</span> TABLES;</span><br><span class="line">#<span class="number">2.</span> 查询表的结构（表的详细字段信息）</span><br><span class="line"><span class="keyword">DESC</span> table_name;</span><br><span class="line">#<span class="number">3.</span> 查询建表语句</span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> <span class="keyword">TABLE</span> table_name;</span><br></pre></td></tr></table></figure><h4 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 创建一个简单的的表</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> table_name&#123;</span><br><span class="line">    column1 datatype,</span><br><span class="line">    column2 datatype,</span><br><span class="line">    ······</span><br><span class="line">    columen datatype #最后一个不能逗号</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">#<span class="number">2.</span> 创建一个学生信息表</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> students (</span><br><span class="line">    id <span class="type">INT</span> AUTO_INCREMENT <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    age <span class="type">INT</span>,</span><br><span class="line">    enrollment_date <span class="type">DATE</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">对上述关键词的解释：</span><br><span class="line">AUTO_INCREMENT: 每次插入一条新记录，这个值就会自动递增。如果起始位<span class="number">1</span>，那么第二个加<span class="number">1</span>。</span><br><span class="line"><span class="keyword">PRIMARY</span> KEY: 主键，表示唯一性，并且不能为<span class="keyword">NULL</span>，作为唯一记录标识符。</span><br><span class="line"><span class="keyword">NOT</span> <span class="keyword">NULL</span>: 这个不能为空。</span><br></pre></td></tr></table></figure><h4 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 修改表名</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name_old RENAME <span class="keyword">TO</span> table_name_new;</span><br><span class="line">#<span class="number">2.</span> 添加一列</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> colume_name datatype;</span><br><span class="line">#<span class="number">3.</span> 修改现有列的数据类型</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name MODIFY <span class="keyword">COLUMN</span> column_name new_type;</span><br><span class="line">#<span class="number">4.</span> 重命名表中的列</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name CHANGE colume_name_old column_name_new datatype;</span><br><span class="line">#<span class="number">5.</span> 删除某列</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">DROP</span> <span class="keyword">COLUMN</span> column_name;</span><br></pre></td></tr></table></figure><h4 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 无需判断的删除（如果不存在，则报错）</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> table_name;</span><br><span class="line">#<span class="number">2.</span> 判断并删除(如果存在，则删除；反之，不操作)</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> table_name;</span><br><span class="line">#<span class="number">3.</span> 删除指定表并且创建表（等同与删除表中的所有data）</span><br><span class="line"><span class="keyword">TRUNCATE</span> <span class="keyword">TABLE</span> table_name;</span><br></pre></td></tr></table></figure><h2 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h2><blockquote><p>DML: 数据操作语言，用作对数据库中表的数据进行增删改</p><h4 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 给指定列添加数据</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name (column1, column2)</span><br><span class="line"><span class="keyword">VALUES</span> (value1, value2);</span><br><span class="line"></span><br><span class="line"># example:</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> students (name, age)</span><br><span class="line"><span class="keyword">VALUES</span> (<span class="string">&#x27;AFEI&#x27;</span>, <span class="number">18</span>)</span><br><span class="line"># 插入了一个名字为AFEI的人，年龄为<span class="number">18</span>，enrollment_data列会被设置为NULL.</span><br><span class="line"></span><br><span class="line">#<span class="number">2.</span> 给所有列添加数据</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name [所有列名]</span><br><span class="line"><span class="keyword">VALUES</span> (value1，value2，······);</span><br><span class="line"></span><br><span class="line"># example:</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> students (id, name, age, enrollment_date)</span><br><span class="line"><span class="keyword">VALUES</span> (<span class="number">1</span>, <span class="string">&#x27;AFEI&#x27;</span>, <span class="number">18</span>, <span class="string">&#x27;2022-08-26&#x27;</span>)</span><br><span class="line"># 插入一条名字为AFEI的人，年龄为<span class="number">18</span>，id为<span class="number">1</span>，入学时间为<span class="number">2022</span><span class="number">-8</span><span class="number">-26.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> students </span><br><span class="line"><span class="keyword">VALUES</span> (<span class="number">1</span>, <span class="string">&#x27;AFEI&#x27;</span>, <span class="number">18</span>, <span class="string">&#x27;2022-08-26&#x27;</span>)</span><br><span class="line"># 同上，不建议这么做。默认的属性插入为列表的顺序。</span><br><span class="line"></span><br><span class="line">#<span class="number">3.</span> 批量添加数据</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> 表名(列名<span class="number">1</span>, [列名<span class="number">2</span>], [...])</span><br><span class="line"><span class="keyword">VALUES</span> (值<span class="number">1</span>, 值<span class="number">2</span>, ...), [(值<span class="number">1</span>, 值<span class="number">2</span>, ...)], [...];</span><br><span class="line"></span><br><span class="line">#example：</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> students (name, age)</span><br><span class="line"><span class="keyword">VALUES</span> (<span class="string">&#x27;David&#x27;</span>, <span class="number">21</span>),</span><br><span class="line">       (<span class="string">&#x27;Eva&#x27;</span>, <span class="number">23</span>),</span><br><span class="line">       (<span class="string">&#x27;Frank&#x27;</span>, <span class="number">20</span>);</span><br><span class="line"></span><br><span class="line">#<span class="number">4.</span> 批量添加所有数据</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> 表名 [所有列名]</span><br><span class="line"><span class="keyword">VALUES</span> (值<span class="number">1</span>, 值<span class="number">2</span>, ...), (值<span class="number">1</span>, 值<span class="number">2</span>, ...), ...;</span><br><span class="line"></span><br><span class="line"># example:</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> students (id, name, age, enrollment_date)</span><br><span class="line"><span class="keyword">VALUES</span> (<span class="number">3</span>, <span class="string">&#x27;Gr&#x27;</span>, <span class="number">18</span>, <span class="string">&#x27;2024-08-26&#x27;</span>),</span><br><span class="line">       (<span class="number">4</span>, <span class="string">&#x27;He&#x27;</span>, <span class="number">22</span>, <span class="string">&#x27;2024-08-27&#x27;</span>),</span><br><span class="line">       (<span class="number">5</span>, <span class="string">&#x27;Is&#x27;</span>, <span class="number">21</span>, <span class="string">&#x27;2024-08-28&#x27;</span>);</span><br></pre></td></tr></table></figure></blockquote><h4 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 修改数据，如果不用<span class="keyword">WHERE</span>条件，则将表中所有数据修改</span><br><span class="line"><span class="keyword">UPDATE</span> table_name</span><br><span class="line"><span class="keyword">SET</span> column1 <span class="operator">=</span> value1, column2 <span class="operator">=</span> value2, ·····</span><br><span class="line">[<span class="keyword">WHERE</span> <span class="keyword">CONDITION</span>];</span><br><span class="line"># example:</span><br><span class="line"><span class="keyword">UPDATE</span> students</span><br><span class="line"><span class="keyword">SET</span> age <span class="operator">=</span> <span class="number">21</span>, enrollment_date <span class="operator">=</span> <span class="number">2023</span><span class="number">-08</span><span class="number">-26</span></span><br><span class="line"><span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"># 将id为<span class="number">1</span>的学生的age修改为<span class="number">21</span>,enrollment_date修改为<span class="number">2023</span><span class="number">-08</span><span class="number">-26</span>；</span><br></pre></td></tr></table></figure><h4 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 删除数据。如果不用<span class="keyword">WHERE</span>条件，则数据全部删除。</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> table_name</span><br><span class="line">[<span class="keyword">WHERE</span> <span class="keyword">CONDITION</span>];</span><br><span class="line"></span><br><span class="line"># example：</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">WHERE</span> ID <span class="operator">=</span> <span class="number">1</span>;</span><br></pre></td></tr></table></figure><h2 id="DQL"><a href="#DQL" class="headerlink" title="DQL"></a>DQL</h2><blockquote><p>DQL:数据查询语言，用于查询数据库的数据</p></blockquote><h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="number">1.</span> 基本某一列</span><br><span class="line"><span class="keyword">SELECT</span> column1, column2,······</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line">[<span class="keyword">WHERE</span> <span class="keyword">CONDITION</span>];</span><br><span class="line"></span><br><span class="line"># example:</span><br><span class="line"><span class="keyword">SELECT</span> name,age</span><br><span class="line"><span class="keyword">FROM</span> students;</span><br><span class="line"># 返回所有学生的name和age;</span><br><span class="line"></span><br><span class="line">#<span class="number">2.</span> 查询全部列</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span> table_name </span><br><span class="line"><span class="keyword">WHERE</span> age <span class="operator">&gt;</span> <span class="number">20</span>;</span><br><span class="line"># 返回所有学生age大于<span class="number">20</span> 的所有列</span><br></pre></td></tr></table></figure><h4 id="使用AND-和-OR-组合条件"><a href="#使用AND-和-OR-组合条件" class="headerlink" title="使用AND 和 OR 组合条件"></a>使用AND 和 OR 组合条件</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2,······</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> condition1 [<span class="keyword">AND</span><span class="operator">|</span><span class="keyword">OR</span>] condition2;</span><br></pre></td></tr></table></figure><h4 id="排序查询"><a href="#排序查询" class="headerlink" title="排序查询"></a>排序查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2,····</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> column1 [<span class="keyword">ASC</span><span class="operator">|</span><span class="keyword">DESC</span>], column2 [<span class="keyword">ASC</span><span class="operator">|</span><span class="keyword">DESC</span>]，····；</span><br><span class="line"># <span class="keyword">ASC</span> 升序， <span class="keyword">DESC</span> 降序；</span><br><span class="line"># 当有多个排序条件时候，先看第一个排序，如果相同，则按照之后的排序 </span><br></pre></td></tr></table></figure><h4 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1， column2</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line">LIMIT <span class="keyword">offset</span>, row_count;</span><br><span class="line"># <span class="keyword">offset</span> 从那一行开始， row_count 指定返回的行数</span><br><span class="line"></span><br><span class="line"># example：</span><br><span class="line"><span class="keyword">SELECT</span> name,age</span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line">LIMIT <span class="number">0</span>,<span class="number">5</span>;</span><br><span class="line"># 返回前五个学生的姓名和年龄</span><br></pre></td></tr></table></figure><h4 id="聚合函数查询"><a href="#聚合函数查询" class="headerlink" title="聚合函数查询"></a>聚合函数查询</h4><div class="table-container"><table><thead><tr><th>FUNCTION</th><th>功能</th></tr></thead><tbody><tr><td>COUNT(column)</td><td>计算指定列的非空记录数量</td></tr><tr><td>SUM(column)</td><td>计算指定列数值的总和</td></tr><tr><td>AVG(column)</td><td>计算指定列的平均值</td></tr><tr><td>[MAX</td><td>MIN(column)]</td><td>计算指定列的最值</td></tr></tbody></table></div><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">FUNCTION</span>(<span class="keyword">column</span>)</span><br><span class="line"><span class="keyword">FROM</span> table_name;</span><br><span class="line"></span><br><span class="line"># example:</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(age)</span><br><span class="line"><span class="keyword">FROM</span> students;</span><br><span class="line"># 返回所有学生年龄的平均值</span><br><span class="line"></span><br><span class="line"># example:</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> students;</span><br><span class="line"># 返回学生的数量</span><br></pre></td></tr></table></figure><h4 id="分组查询-GROUP-BY"><a href="#分组查询-GROUP-BY" class="headerlink" title="分组查询(GROUP BY)"></a>分组查询(GROUP BY)</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 以column1 分组，汇总数据</span><br><span class="line"><span class="keyword">SELECT</span> column1, <span class="keyword">FUNCTION</span>(column2)</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> column1;</span><br><span class="line"></span><br><span class="line"># example：</span><br><span class="line"># 按照age分组，计算每个年龄的人的数量</span><br><span class="line"><span class="keyword">SELECT</span> age,<span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> age;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="过滤分组结果-HAVING"><a href="#过滤分组结果-HAVING" class="headerlink" title="过滤分组结果(HAVING)"></a>过滤分组结果(HAVING)</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, <span class="keyword">FUNCTION</span>(column2)</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> column1</span><br><span class="line"><span class="keyword">HAVING</span> <span class="keyword">condition</span>;</span><br><span class="line"></span><br><span class="line"># example:</span><br><span class="line"><span class="keyword">SELECT</span> age, <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> age</span><br><span class="line"><span class="keyword">HAVING</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="operator">&gt;</span> <span class="number">1</span>;</span><br><span class="line"># 按照age分组，并且过滤得到数量大于<span class="number">1</span>的汇总</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><strong>WHERE 和 HAVING 的区别</strong></p><ul><li>判断时间不同：<code>WHERE</code>是分组前先过滤，如果不满足，则不参与分组。 <code>HAVING</code>是分组后再过滤。</li></ul><h4 id="多表连接查询"><a href="#多表连接查询" class="headerlink" title="多表连接查询"></a>多表连接查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2,···</span><br><span class="line"><span class="keyword">FROM</span> table_name1</span><br><span class="line"><span class="keyword">JOIN</span> table_name2</span><br><span class="line"><span class="keyword">ON</span> table_name1.column <span class="operator">=</span> table_name2.column;</span><br><span class="line"># 将两个或者多个表中的数据通过指定的条件链接在一起</span><br></pre></td></tr></table></figure><p>常见的连接方式：<br>|类型|解释|<br>|-|-|<br>|INNER JOIN|仅返回两表匹配的记录|<br>|LEFT JOIN|返回左表所有记录和右表匹配的记录，如果右表无匹配，返回NULL|<br>|RIGHT JOIN|返回右表所有记录和左表匹配的记录，如果左表无匹配，返回NULL|<br>|FULL JOIN|返回两表的全部记录，不匹配，返回NULL|</p><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># example</span><br><span class="line"># 假设有一个`COURSE`表和一个`enrollments`表，查询所有学生以及其选课名称、</span><br><span class="line"><span class="keyword">SELECT</span> student.name, courses.course_name</span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> enrollments <span class="keyword">ON</span> students.id <span class="operator">=</span> enrollments.student_id</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> courses <span class="keyword">ON</span> enrollments.course_id <span class="operator">=</span> courses.id;</span><br></pre></td></tr></table></figure><h4 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">column</span> OPERATOR (<span class="keyword">SELECT</span> <span class="keyword">column</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> <span class="keyword">condition</span>)</span><br><span class="line"># 使用一个查询的结果作为另一个查询的条件</span><br><span class="line"></span><br><span class="line"># example</span><br><span class="line"># 查询比`students`表中大于平均age的学生：</span><br><span class="line"><span class="keyword">SELECT</span> name, age</span><br><span class="line"><span class="keyword">FROM</span> studens</span><br><span class="line"><span class="keyword">WHERE</span> age <span class="operator">&gt;</span> (SELECR <span class="built_in">AVG</span>(age) <span class="keyword">FROM</span> students);</span><br></pre></td></tr></table></figure><h2 id="DCL"><a href="#DCL" class="headerlink" title="DCL"></a>DCL</h2><blockquote><p>DCL(Data Control Language): 数据控制语言，可以创建和管理数据库用户、授予或者撤销权限，以保证数据库的安全和访问控制</p><h4 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 创建一个新的数据库用户</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">&#x27;username&#x27;</span>@<span class="string">&#x27;host&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;password&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 创建一个用户名为<span class="string">&#x27;newuser&#x27;</span>,密码为<span class="string">&#x27;user_password&#x27;</span>的用户，</span><br><span class="line"># 并且限制其在本地访问</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;user_password&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 创建一个从任意主机访问的用户</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;%&#x27;</span> INDETIFIED <span class="keyword">BY</span> <span class="string">&#x27;user_password&#x27;</span>;</span><br></pre></td></tr></table></figure></blockquote><h4 id="授予权限"><a href="#授予权限" class="headerlink" title="授予权限"></a>授予权限</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> privilege_list <span class="keyword">ON</span> database_name.table_name <span class="keyword">TO</span> <span class="string">&#x27;username&#x27;</span>@<span class="string">&#x27;host&#x27;</span>;</span><br><span class="line"># 向指定用户授予数据库或者表的访问权限;</span><br><span class="line"># privilege_list: 要授予的权限列表，可以是 <span class="keyword">ALL</span> PRIVILEGES 或具体的权限（如 <span class="keyword">SELECT</span>, <span class="keyword">INSERT</span>, <span class="keyword">UPDATE</span>, <span class="keyword">DELETE</span> 等）。</span><br><span class="line"># database_name.table_name: 指定权限应用的数据库和表，<span class="operator">*</span>.<span class="operator">*</span> 表示所有数据库和表。</span><br><span class="line"># username: 接受权限的用户。</span><br></pre></td></tr></table></figure><h4 id="撤销权限"><a href="#撤销权限" class="headerlink" title="撤销权限"></a>撤销权限</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">REVOKE</span> privilege_list <span class="keyword">ON</span> database_name.table_name <span class="keyword">FROM</span> <span class="string">&#x27;username&#x27;</span>@<span class="string">&#x27;host&#x27;</span>;</span><br></pre></td></tr></table></figure><h4 id="查看用户权限"><a href="#查看用户权限" class="headerlink" title="查看用户权限"></a>查看用户权限</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> GRANTS <span class="keyword">FOR</span> <span class="string">&#x27;username&#x27;</span>@<span class="string">&#x27;host&#x27;</span>;</span><br></pre></td></tr></table></figure><h4 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> <span class="string">&#x27;username&#x27;</span>@<span class="string">&#x27;host&#x27;</span>;</span><br></pre></td></tr></table></figure><p>以上为MYSQL的一些简单的语法。</p>]]></content>
+      
+      
       <categories>
-        <category>BUAA-SUMMER-PYTHON</category>
-        <category>课上</category>
+          
+          <category> BUAA-SUMMER-PYTHON </category>
+          
+          <category> 课下 </category>
+          
       </categories>
-  </entry>
-  <entry>
-    <title>BUAA-SUMMER-PYTHON 第一次课下作业</title>
-    <url>/2024/08/03/Summer_Python_1_under/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p>
-<h2 id="2024年第一次课下作业"><a href="#2024年第一次课下作业" class="headerlink" title="2024年第一次课下作业"></a>2024年第一次课下作业</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>【Description】</p>
-<p>Gives two integers a and b as input, returns the value of a+b+a*b.</p>
-<p>【Input】</p>
-<p>A line contains two integers, separated by space, representing a and b.</p>
-<p>【Output】</p>
-<p>An integer, the value of a+b+a*b.</p>
-<p>【Examples Input】</p>
-<blockquote>
-<p>1 1</p>
-</blockquote>
-<p>【Examples output】</p>
-<blockquote>
-<p>3</p>
-</blockquote>
-<p>【Example description】</p>
-<blockquote>
-<p>1+1+1*1=3</p>
-</blockquote>
-<p>【Notes】</p>
-<p>For 100% of test cases, a,b in [1, 10000].</p>
-<hr>
-<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>【Description】</p>
-<p>Given two strings s and t, returns the number of times that t appears in s. Note that each character cannot be calculated twice.</p>
-<p>【Input】</p>
-<p>Two lines, string s and t.</p>
-<p>【Output】</p>
-<p>If s contains t, outputs the number of times that t appears in s. Otherwise outputs False.</p>
-<p>【Example Input1】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">abababa</span><br><span class="line"></span><br><span class="line">aba</span><br></pre></td></tr></table></figure></p>
-<p>【Example Output1】</p>
-<blockquote>
-<p>2</p>
-</blockquote>
-<p>【Example Input2】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ab</span><br><span class="line"></span><br><span class="line">aba</span><br></pre></td></tr></table></figure></p>
-<p>【Example Output2】</p>
-<blockquote>
-<p>False</p>
-</blockquote>
-<p>【Notes】</p>
-<p>The question is to count how many T does s have, not how many T appear in S</p>
-<hr>
-<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>【Description】</p>
-<p>Xiaoyu is swimming happily, but she is soon sad to find that her strength is not enough, swimming is very tired. It is known that Xiaoyu can swim 2 meters in the first step, but as she gets more and more tired, her strength becomes smaller and smaller, and her next step can only swim 98% of the distance of the previous step. Now Xiaoyu wants to know how many steps she needs to swim to a distance of X meters. Please program to solve this problem.</p>
-<p>【Input】</p>
-<p>target distance to swim.</p>
-<p>【Output】</p>
-<p>how many steps Xiaoyu needs to swim</p>
-<p>【Example Input】</p>
-<blockquote>
-<p>4.3</p>
-</blockquote>
-<p>【Example Output】</p>
-<blockquote>
-<p>3</p>
-</blockquote>
-<p>【Notes】</p>
-<p>target distance &lt;=100-1e^-8, and may not be an integer</p>
-<hr>
-<p>Chinese Citizen ID</p>
-<p>【Problem Statement】</p>
-<p>Chinese Citizen ID has 18 digits. The first 6 digits show where the citizen lives. The next 8 digits show the citizen’s birthday (YYYYMMDD), and followed by 3 digits of serial number. The last digit is a checksum (0,1,2,3,4,5,6,7,8,9, or letter X).</p>
-<p>To calculate the checksum $\sum_{i=1}^{17} (a_i*b_i)$ , you need to calculate , where $a_i$ is the i-th digit of the Citizen ID, and $b_i$ is given in the table below.</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>i</th>
-<th>$b_i$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>7</td>
-</tr>
-<tr>
-<td>2</td>
-<td>9</td>
-</tr>
-<tr>
-<td>3</td>
-<td>10</td>
-</tr>
-<tr>
-<td>4</td>
-<td>5</td>
-</tr>
-<tr>
-<td>5</td>
-<td>8</td>
-</tr>
-<tr>
-<td>6</td>
-<td>4</td>
-</tr>
-<tr>
-<td>7</td>
-<td>2</td>
-</tr>
-<tr>
-<td>8</td>
-<td>1</td>
-</tr>
-<tr>
-<td>9</td>
-<td>6</td>
-</tr>
-<tr>
-<td>10</td>
-<td>3</td>
-</tr>
-<tr>
-<td>11</td>
-<td>7</td>
-</tr>
-<tr>
-<td>12</td>
-<td>9</td>
-</tr>
-<tr>
-<td>13</td>
-<td>10</td>
-</tr>
-<tr>
-<td>14</td>
-<td>5</td>
-</tr>
-<tr>
-<td>15</td>
-<td>8</td>
-</tr>
-<tr>
-<td>16</td>
-<td>4</td>
-</tr>
-<tr>
-<td>17</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Then, caculate s%11 (s mod 11), and the checksum is shown in the table below:</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">s%11</th>
-<th style="text-align:center">checksum (last digit of Citizen ID)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">X</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">9</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:center">8</td>
-</tr>
-<tr>
-<td style="text-align:center">5</td>
-<td style="text-align:center">7</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center">6</td>
-</tr>
-<tr>
-<td style="text-align:center">7</td>
-<td style="text-align:center">5</td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center">4</td>
-</tr>
-<tr>
-<td style="text-align:center">9</td>
-<td style="text-align:center">3</td>
-</tr>
-<tr>
-<td style="text-align:center">10</td>
-<td style="text-align:center">2</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Li Hua has got all his classmates’ Chinese citizen ID from his teacher, but he doesn’t know the rules above, and he needs to check how many of his classmates is over 18 years old, and how many student has made a typo inputting their ID. Please solve his problem by writing a program in Python.</p>
-<p>You only need to check if the checksum is correct according to the rules, and how many people is over 18 years old.</p>
-<p>Note: if the student has an invalid checksum and is over 18 years old, the student should also be counted.</p>
-<p>【Input Format】<br>The first line, 1 integer n, shows how many classmates he has got.<br>The second line, 3 integers y m d separated by space, gives a date (year, month, day).<br>Then followed by n lines, each line has a 18-Digits ID, shows Li Hua’s classmates’ ID (All digits or letter ‘X’, ‘X’ will alwasy be capitalized).</p>
-<p>【Output Format】</p>
-<p>One line, two integers x y separated by space, where x is the number of classmates that is over 18 years old at the given date, and y is the number of classmates has a incorrect checksum in their IDs.</p>
-<p>【Sample Input】</p>
-<p>3</p>
-<p>2018 1 1</p>
-<p>11010120000101001X</p>
-<p>114514191908100028</p>
-<p>111111201712310034</p>
-<p>【Sample Output】</p>
-<p>2 1</p>
-<p>【Sample Explanation】</p>
-<p>11010120000101001X has a faulty checksum, the last digit should be 0. This student is over 18 years old.</p>
-<p>114514191908100028 has a correct checksum and is over 18 years old.</p>
-<p>111111201712310034 has a correct checksum and is under 18 years old.</p>
-<p>【Data】</p>
-<p>1&lt;=n&lt;=30000.</p>
-<p>All dates is no later than 9999-12-31 and is valid.</p>
-<p>All ID has an valid birth date. However, its checksum may or may not be correct.</p>
-<hr>
-<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>【Background】</p>
-<p>Nyima’s work and rest are very irregular.  He often sleeps until 3 p.m., so it takes him a long time to send messages back and forth. There are too many messages in various group chats. He just wants to reply to his content. Please help him filter the messages.</p>
-<p>【Description】</p>
-<p>Given n lines of messages as input, it is required to filter out the messages containing @ all and @ nyima from the messages, first output all the messages of @ all (the messages are sorted in ascending order according to dictionary order), and then output all the messages of @ nyima (the messages are sorted in descending order according to dictionary order)</p>
-<p>【Input】</p>
-<p>Several lines, each line represents a message (the whole line is the content of the message, including the part before the colon)</p>
-<p>Ensure that the last line, no new messages, represents the end of input, and the last line is not included in the message</p>
-<p>【Output】</p>
-<p>Each line outputs a message, indicating the filtered information. Pay attention to sorting according to the requirements in the title description</p>
-<p>【Example Input】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xuemei: zhujiao gege, I don&#x27;t know how to use python @nyima</span><br><span class="line">hwjj: @all dajiji de ti zen me hai mei chu hao</span><br><span class="line">roommate: so glad to hear that 20ers will have junxun in august</span><br><span class="line">no new messages</span><br></pre></td></tr></table></figure><br>【Example Output】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hwjj: @all dajiji de ti zen me hai mei chu hao</span><br><span class="line">xuemei: zhujiao gege, I don&#x27;t know how to use python @nyima</span><br></pre></td></tr></table></figure><br>【Notes】</p>
-<ul>
-<li>Data limit: 1 &lt; = the number of filtered messages &lt; = the total number of messages &lt; = 50. If this condition is met, the number of @ all messages or @ nyima messages may be 0 (at this time, no extra empty lines can be output)</li>
-<li>There is no message containing both @ all and @ nyima</li>
-</ul>
-]]></content>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BUAA-SUMMER-PYTHON 第四次课下作业</title>
+      <link href="/2024/08/03/Summer_Python_4_under/"/>
+      <url>/2024/08/03/Summer_Python_4_under/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p><h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>【Problem Description】</p><p>Sort the grades for a class of students. </p><p>Input the names and grades of the students (maximum of 50 students in a class) into the console, and then output the names and grades of the students in descending order of their grades. If two students have the same grade, they are to be sorted according to the order of input.</p><p>【Input Format】</p><p>Input the names and grades of the students into the console:</p><ol><li><p>The first line contains the number of students in the class.</p></li><li><p>Each subsequent line contains the name and grade of a student, separated by a space. The grade must be an integer number.</p></li></ol><p>【Output Format】</p><p>Output the names and grades of the students in descending order of their grades. Each line should contain the name in English characters (with 15 string padding) and grade (with 5 string padding), aligned according to the default format. If two students have the same grade, they are sorted according to the order of input.</p><p>【Sample Input】</p><p>4<br>aaa 50<br>bbb 70<br>ccc 65<br>ddd 90</p><p>【Sample Output】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">############ddd###90</span><br><span class="line">############bbb###70</span><br><span class="line">############ccc###65</span><br><span class="line">############aaa###50</span><br></pre></td></tr></table></figure><br>(Note: The “#” sign represents a space)</p><p>【Explanation】</p><p>The names and grades of four students are input into the console, and the program outputs the grades in descending order.</p><h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>2.(509664)</p><p>【Problem Description】<br>Write a program to count the maximum nesting level of curly braces in a given C source code and output the nested sequence of curly braces. The source code does not contain any syntax errors.<br>Note:</p><ol><li><p>Curly braces within comments (/<em> … </em>/) should be ignored and not counted.</p></li><li><p>Curly braces will not appear within string literals in the source code.</p></li></ol><p>【Input Format】</p><p>The C source code file to be processed is named input.c and located in the current directory.</p><p>【Output Format】</p><p>Output the maximum nesting level of curly braces on the console, followed by the sequence of curly braces in the order of their appearance on a new line.</p><p>【Sample Input】</p><p>Suppose the content of the input.c file in the current directory is:<br>【Sample Output】</p>3{{{}{}}}<p>The maximum nesting level of curly braces in the source code input.c is 3, so the output is 3. </p><p>【Explanation】</p><p>Then, output the curly braces in the order of their appearance, ignoring the braces within comments, which gives the sequence: {{{}{}}}.</p><h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>【Problem Description】</p><p>Input a line of string consisting of only lowercase English letters (a-z), where characters may be repeated, and the length of the string does not exceed 10000 characters. </p><p>From this string, select a certain number of characters in order (not necessarily adjacent) to form a new string, called a “sub-sequence.” If every two adjacent characters in the sub-sequence string are either equal or the later character is greater than the previous one, it is called an “ascending subsequence.” Write a program to find the length of the longest ascending sub-sequence string in the input string.</p><p>For example, for the input string “abdbch,” the ascending sub-sequences that can be formed are: “abd,” “abch,” “bbch,” “abbch,” and so on. Among them, the longest ascending sub-sequence string is “abbch,” with a length of 5.</p><p>【Input Format】</p><p>Read a line of string from console. The string should not contain any spaces and must end with a newline character.</p><p>【Output Format】</p><p>Print a positive integer to console, which is the length of the longest ascending sub-sequence string. End the line with a newline character.</p><p>【Sample Input】</p><p>abdbch<br>【Sample Output】</p><p>5<br>【Explanation】</p><p>In the input string “abdbch”, the longest ascending sub-sequence string is “abbch”, with a length of 5.</p><h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><p>【Problem Description】</p><p>(Hint:The difficulty of this question is not high, but the text of the question is long, please answer patiently.)</p><p>On a computer screen, there are N windows. The points on the boundaries of the windows also belong to the respective windows. The windows have different levels of hierarchy, and only the content of the top-most window in the overlapping area of multiple windows is displayed. When you click on a point of the screen using a mouse, if it falls within a window, you will have selected the top-most window to which the clicked position belongs, and this particular window will be moved to the top of all other windows while maintaining the order of the remaining windows. If you click on a position that does not belong to any window, the system will ignore the click. Write a program to simulate the process of clicking on windows: first, read from the standard input to get the number of windows on the screen, each window’s stacking order and position on screen (represented by the coordinates of the lower-left and upper-right corners of the windows, with higher-level windows input first), then input the number of clicks, and starting from the subsequent lines, input two integers representing the coordinates of the clicked positions. Write a program to determine the stacking order of windows after the clicks.</p><p>Assumptions:</p><p>(1) The lower-left corner of the screen is taken as the origin of the X and Y coordinates, i.e., (0, 0). All input coordinate values are integers and are greater than or equal to 0 and less than or equal to 1000.</p><p>(2) The output for the window stacking sequence starts from the window number of the top-level window after the last click, and each number is separated by a space. The last space after the last number is optional.</p><p>(3) The number of windows is greater than 0 and less than or equal to 10, and the number of clicks is greater than 0 and less than or equal to 20.</p><p>【Input Format】</p><p>First, input the number of windows, and then starting from subsequent new lines, input five integers representing the window number, the horizontal and vertical coordinates of the bottom-left corner, and the horizontal and vertical coordinates of the top-right corner, separated by a single space. Then input the number of clicks, and then starting from subsequent new lines, input two integers representing the horizontal and vertical coordinates of each click, separated by a single space. After the last pair of coordinates is input, give a newline character.</p><p>【Output Format】</p><p>Output the stacking sequence of each window starting from the window number of the top-level window after the last click. Each window number should be separated by a space. The last space after the last number is optional.</p><p>【Sample Input】</p><p>4<br>1 43 31 70 56<br>2 50 24 80 50<br>3 23 13 63 42<br>4 57 36 90 62<br>5<br>47 28<br>73 40<br>60 38<br>72 52<br>35 56<br>【Sample Output】</p><p>4 2 3 1<br>【Explanation】</p><p>For the given input, there are 4 windows on the screen. The top-most window has the bottom-left and top-right coordinates (43, 31) and (70, 56), with a window number of 1. The subsequent windows have the bottom-left and top-right coordinates (50, 24) and (80, 50), (23, 13) and (63, 42), (57, 36) and (90, 62), with window numbers 2, 3, and 4, respectively. The first click is at coordinates (47, 28), which falls on window number 3. So, window number 3 becomes the new top-level window, and the stacking sequence becomes (3, 1, 2, 4). The second click is at (73, 40), which falls within the overlapping area of window numbers 2 and 4. As window number 2 is above window number 4, the click is registered on window number 2, which window 2 becomes the new top-level window. The stacking sequence is now (2, 3, 1, 4). The third click is at (60, 38), which is within the overlapping area of all windows. Since it falls within the top-level window number 2, the stacking sequence remains unchanged. The fourth click is at (72, 52), which falls only within window number 4. So, window number 4 becomes the new top-level window, and the stacking sequence becomes (4, 2, 3, 1). The fifth click is at (35, 56), which does not belong to any window. Therefore, the stacking sequence remains unchanged. In the end, window number 4 is the top-level window, followed by window number 2, 3, and 1.</p><h3 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h3><p>【Background】</p><p>The eight queens problem is an old and famous one. There are eight queens on an 8*8 grid chess table. Queens can’t attack each other, that is, any two Queens can’t be in the same row, the same column or the same diagonal line. How many kinds of scenarios are there.</p><p>After learning the content of this week’s course, Xiaoming has worked out 92 solutions to the eight queens problem in Python, but he has a new question: assuming that a queen has been placed on the chessboard, how many ways can the rest queens put?</p><p>【Description】</p><p>For the extension of the eight queens problem, given the position of one queen in the chessboard, how many ways can the other seven queens put?</p><p>【Input】</p><p>One line, two integers x, y. Represents the row and column values of a given queen.</p><p>【Output】</p><p>A row, an integer, the number of pendulums of the remaining seven queens given a queen’s position.</p><p>【Example Input】</p><p>1 1<br>【Example Output】</p><p>4<br>【Example Description】</p><p>There are four pendulum methods</p><p>example1:</p><p>X O O O O O O O </p><p>O O O O X O O O </p><p>O O O O O O O X </p><p>O O O O O X O O </p><p>O O X O O O O O </p><p>O O O O O O X O </p><p>O X O O O O O O </p><p>O O O X O O O O </p><p>example2:</p><p>X O O O O O O O </p><p>O O O O O X O O </p><p>O O O O O O O X </p><p>O O X O O O O O </p><p>O O O O O O X O </p><p>O O O X O O O O </p><p>O X O O O O O O </p><p>O O O O X O O O</p><p>example3:</p><p>X O O O O O O O </p><p>O O O O O O X O </p><p>O O O X O O O O </p><p>O O O O O X O O </p><p>O O O O O O O X </p><p>O X O O O O O O </p><p>O O O O X O O O </p><p>O O X O O O O O </p><p>example4:</p><p>X O O O O O O O </p><p>O O O O O O X O </p><p>O O O O X O O O </p><p>O O O O O O O X </p><p>O X O O O O O O </p><p>O O O X O O O O </p><p>O O O O O X O O </p><p>O O X O O O O O </p>]]></content>
+      
+      
       <categories>
-        <category>BUAA-SUMMER-PYTHON</category>
-        <category>课下</category>
+          
+          <category> BUAA-SUMMER-PYTHON </category>
+          
+          <category> 课下 </category>
+          
       </categories>
-  </entry>
-  <entry>
-    <title>BUAA-SUMMER-PYTHON 第二次课上作业</title>
-    <url>/2024/08/03/Summer_Python_2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p>
-<h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><ul>
-<li><p>Which of the below Python data type is mutable? <strong>_</strong><br>  A. Tuple<br>  B. String<br>  C. List<br>  D. Dictionary</p>
-</li>
-<li><p>Which Python built-in function is used to remove and return an element from a list? <strong>_</strong><br>  A. append()<br>  B. remove()<br>  C. pop()<br>  D. sort()</p>
-</li>
-<li><p>The following is a piece of code that sums up all the values in a dictionary and prints the result:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">d = &#123;&quot;a&quot;: 1,  &quot;b&quot;: 2,  &quot;c&quot;: 3&#125;</span><br><span class="line">total = ___</span><br><span class="line">print(total)</span><br></pre></td></tr></table></figure>
-<p>  Please fill in the blanks in the code. <strong>_</strong><br>  A. sum(d)<br>  B. sum(d.values())<br>  C. sum(d.keys())<br>  D. sum(d.items())</p>
-</li>
-<li><p>In Python, which of the following option(s) can be used to sort the keys in a dictionary? <strong>_</strong><br>  A. dict.keys()<br>  B. dict.sort()<br>  C. sorted(dict)<br>  D. sort(dict.keys())</p>
-</li>
-</ul>
-<ul>
-<li>Which of the following option(s) can be used to merge the keys and values of a dictionary into a new string?Assuming that both the keys and values of the dictionary are strings. <strong>_</strong><br>  A. list(dict.merge())<br>  B. “”.join(list(dict))<br>  C. “”.join(list(dict.items()))<br>  D. “”.join(list(dict.keys()) + list(dict.values()))</li>
-</ul>
-<h3 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h3><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>【Description】</p>
-<p>Input the string containing the ‘-‘ extension from the keyboard, expand it into equivalent complete characters, for example, expand A-D to ABCD, and output the extended string.</p>
-<p>Requirements: (1) the string to be extended contains at least one extender and does not contain spaces（ 2) It only deals with the character extension in the range of [a-z], [A-Z] and [0-9], that is, only when the characters before and after the extension are lowercase letters, uppercase letters or numbers at the same time, it can be extended. In other cases, it will not be extended and output as is. For example, strings such as a-R, D-e, 0-B, 4-b are not extended.<br>【Input】<br>Enter a string containing an extension from the keyboard<br>【Output】<br>Output extended string<br>【Example Input】<br>ADEa-g02<br>【Example Output】<br>ADEabcdefg02<br>【Notes】<br>The length of input and output strings should not exceed 100</p>
-<h4 id="2"><a href="#2" class="headerlink" title="2"></a>2</h4><p>【Problem Description】</p>
-<p>At the end of a semester, the head teacher Li Hua obtained the grades of each subject for the whole class. He wanted to calculate the average score of each subject (Chinese, Mathematics, English) for the whole class. However, he accidentally mixed up the scores. Please write a program in Python to help him fix the issue.</p>
-<p>【Input form】</p>
-<p>The first line, an integer n, represents the number of people in the class.</p>
-<p>For the next 3n lines, each line represents a student’s grades for a course. The format each line consists of two parameters, a and b, separated by a space in between. Parameter a is a floating-point number representing the scorer of the exam. Parameter b is a string (Chinese, Math, English) representing the subject.</p>
-<p>It is guaranteed that each student has one and only one score for each subject. Hence in the above data, Chinese, Math, and English will only appear n times each for n number of students.</p>
-<p>【Output format】</p>
-<p>Three lines, each line with a floating-point number (two digits), are the average scores for Chinese, Mathematics, and English.</p>
-<p>【Sample input】<br>3<br>100.0 Chinese<br>100.0 Math<br>90.5 English<br>90.5 Math<br>89.5 Chinese<br>99.5 Chinese<br>60.0 English<br>80.0 Math<br>72.5 English</p>
-<p>【Example output】</p>
-<p>96.33<br>90.17<br>74.33</p>
-<p>【Example description】</p>
-<p>For the above inputs, the average score for Chinese is 96.33, the average score for mathematics is 90.17, and the average score for English is 74.33</p>
-<p>【Data range】<br>1&lt;=n&lt;=30000, 0&lt;=a&lt;=100, b∈{‘Chinese’, ‘Math’, ‘English’}</p>
-]]></content>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BUAA-SUMMER-PYTHON 第三次课下作业</title>
+      <link href="/2024/08/03/Summer_Python_3_under/"/>
+      <url>/2024/08/03/Summer_Python_3_under/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p><h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>【Problem Description】<br>Write a program that can input a three-digit positive integer and output the corresponding number in reverse order. If the input number is not a three-digit positive integer, output -1.</p><p>【Input Format】<br>Input a three-digit positive integer.</p><p>【Output Format】<br>Output the value of the number after reversing the digits.</p><p>【Sample Input】</p><p>356</p><p>【Sample Output】</p><p>653</p><p>【Explanation】</p><p>The positive integer value input is 356. Swapping the ones and hundreds digit gives the result 653. If the input positive integer is 300, then the output is 3.</p><h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>【Problem Description】  </p><p>Implement a simple calculator: Read two integer operands (data1 and data2) and an operator (op) from the console, and calculate the expression data1 op data2. The operator op can be one of the followings: +, -, *, or /.</p><p>【Input Format】</p><p>Input the operands and operator from the console:</p><ol><li><p>First, input two integers as the operands, separated by a space, representing data1 and data2.</p></li><li><p>Next, input a character as the operator op, which can be ‘+’, ‘-‘, ‘*’, or ‘/‘.</p></li></ol><p>Leave a space between data1, data2, and op. Refer to the sample input for specific format.</p><p>【Output Format】</p><p>Output the result of the calculation to the console. If division is performed and the value is fully divisible, output the result as an integer. Otherwise, output the value rounded to two decimal places.</p><p>【Sample Input】</p><p>23 5 *<br>【Sample Output】</p><p>115<br>【Explanation】</p><p>In the input, the first operand is 23, the second operand is 5, and the operator is ‘*’. The calculator performs multiplication to the operands 23 and 5. The result is 115.</p><h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>【Problem Description】</p><p>Write a program to find the longest common substring between two input strings, s and t.</p><p>【Input Format】</p><p>Read the strings s and t from the console, each on a separate line. Both s and t can consist of any arbitrary characters, with lengths not exceeding 50 characters. The input data should only have one unique longest common substring. If there is no common substring, print “No Answer”.</p><p>【Output Format】</p><p>Print the longest common substring of s and t on a separate line, followed by a newline character.</p><p>Algorithm hint: Use an integer counter to keep track of the current matching length and a character array to store the current matching substring. If a longer substring is found, update the counter and array accordingly.</p><p>【Sample Explanation】</p><p>Assume the following input is entered into the console:</p><p>aabcdababce<br>12abcabcdace<br>The output is:</p><p>abcda</p><h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><p>【Problem Description】</p><p>There are two rectangles, A and B, positioned arbitrarily on a plane. Write a program to calculate the area of their intersection (shaded region in the diagram). (0 ≤ a, b ≤ 1000)</p><p>【Input Format】</p><p>Read two lines from standard input, each containing four integers separated by spaces, in the following format:</p><p>Ax1 Ay1 Ax2 Ay2</p><p>Bx1 By1 Bx2 By2</p><p>Here, (x1, y1) represents the coordinates of the top-left corner of the rectangle, and (x2, y2) represents the coordinates of the bottom-right corner. All coordinate values are integers ranging from 0 to 1000.</p><p>【Output Format】</p><p>Print an integer to standard output, which represents the area of the intersection between the two rectangles (can be 0). End the output with a newline character.</p><p>【Sample Input】</p><p>0 2 2 0<br>1 4 3 1<br>【Sample Output】</p><p>1<br>【Explanation】</p><p>The intersection area of the two rectangles is 1.</p><h3 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h3><p>【Problem Description】</p><p>Write a program to convert a general infix expression, composed of single-digit integers, into a postfix expression (Reverse Polish notation). Assume that the input is a valid expression.</p><p>【Input Format】</p><p>Input a valid infix expression (without spaces) and end the input with a newline character. The expression should have a maximum of 80 characters.</p><p>【Output Format】</p><p>Output the postfix expression.</p><p>【Sample Input】</p><p>(6+2)*5-8/4</p><p>【Sample Output】</p><p>62+5*84/-</p><p>【Explanation】</p><p>The input is a valid infix expression (without spaces), and the output is the corresponding postfix expression.</p>]]></content>
+      
+      
       <categories>
-        <category>BUAA-SUMMER-PYTHON</category>
-        <category>课上</category>
+          
+          <category> BUAA-SUMMER-PYTHON </category>
+          
+          <category> 课下 </category>
+          
       </categories>
-  </entry>
-  <entry>
-    <title>BUAA-SUMMER-PYTHON 第三次课上作业</title>
-    <url>/2024/08/03/Summer_Python_3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p>
-<h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><ol>
-<li><p>Which of the following options is not a reserved word in the Python programming language?<br>A. pass<br>B. while<br>C. do<br>D. except</p>
-</li>
-<li><p>Which of the following options does not comply with the variable naming rules in the Python programming language?<br>A. <em>33keyword<br>B. keyword_33<br>C. 33_keyword<br>D. keyword33</em></p>
-</li>
-<li><p>Regarding the eval function, which of the following options describes incorrectly:<br>A. The execution of eval(“Hello”) and eval(“ ‘Hello’ “) yields the same result.<br>B. The definition of the eval function is: eval(source, globals=None, locals=None, /)<br>C. If a user wants to input a number and perform calculations on it using a program, they can use the combination eval(input(&lt;输入提示字符串&gt;))<br>D. The purpose of the eval function is to convert the input string into a Python statement and execute that statement.</p>
-</li>
-<li><p>Given a dictionary d, which of the following options correctly describes d.get(x, y)?<br>A. Returns the value in dictionary d with key x, if it exists; otherwise, returns y.<br>B. Returns the value in dictionary d with value y, if it exists; otherwise, returns x.<br>C. Returns the value in dictionary d with key x, if it exists; otherwise, returns x.<br>D. Returns the value in dictionary d with key-value pair x:y.</p>
-</li>
-<li><p>The output result of the code below is:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 4</span><br><span class="line">a ^= 3</span><br><span class="line">b = a ^ 2</span><br><span class="line">print(a,end=&quot;,&quot;)</span><br><span class="line">print(b)```  </span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. 64, 4096</span><br><span class="line">B. 4,3</span><br><span class="line">C. 5,7</span><br><span class="line">D. 7,5</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h3><ol>
-<li><p>Given x = {‘a’: ‘b’, ‘c’: ‘d’}, the value of the expression ‘a’ in x is     .</p>
-</li>
-<li><p>Given x = {‘a’: ‘b’, ‘c’: ‘d’}, the value of the expression ‘b’ in x.values() is      True     .</p>
-</li>
-<li><p>The value of the expression (1,3)+(5,7) is      (1, 3, 5, 7)     .(With () and commas)</p>
-</li>
-<li><p>For the list L=[2, 16, 36, 64], after executing L.insert(0,10), the value of L is      [10, 2, 16, 36, 64]     . (With [] and commas)</p>
-</li>
-<li><p>When executing the statement print(set([1,2,2,3])[3]), the reason for error in execution is      set is not subscriptable     . (index error/set is not subscriptable)</p>
-</li>
-</ol>
-<h3 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h3><h4 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h4><p>【Description】</p>
-<p>Give a series of dish names, output the menu after removing the duplicate dishes and sorting them in ascending order.</p>
-<p>【Input】</p>
-<p>A line of dish names separated by spaces indicates the recipe obtained.</p>
-<p>【Output】</p>
-<p>A line of dish names separated by spaces indicates the recipe after removing the duplicate.</p>
-<p>【Example Input】</p>
-<p>pizza donut hamburger chips hamburger donut juice<br>【Example Output】</p>
-<p>chips donut hamburger juice pizza<br>【Notes】</p>
-<p>Set () can convert a list into a collection,Consider using the set data type feature to remove duplicate elements</p>
-<p>You can use. Join() to get a string that represents a list joined by spaces.</p>
-<p>The list containing strings can also be sorted using the sort() method</p>
-<h4 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h4><p>【Description】</p>
-<p>Input the string containing the ‘-‘ extension from the keyboard, expand it into equivalent complete characters, for example, expand A-D to ABCD, and output the extended string.</p>
-<p>Requirements: (1) The string to be extended contains at most one extender and no spaces(2) The characters before and after the extender must be in the range of [a-z], [A-Z] or [0-9] before extender expansion, and the extended characters must also be in this range. The ASCII code before the hyphen is smaller than that after the hyphen can be expand. In other cases, they will not be expanded and will be output as is. For example, 5-d will be extended to</p>
-<p>56789ABCDEFGHIJKLMNOPQRSTUVWXYZabcd.<br>【Input】</p>
-<p>Enter a string containing an extension from the keyboard</p>
-<p>【Output】</p>
-<p>Output extended string</p>
-<p>【Example Input1】</p>
-<p>ADEa-g02<br>【Example Output1】</p>
-<p>ADEabcdefg02<br>【Example Input2】</p>
-<p>T-bcd<br>【Example Output2】</p>
-<p>TUVWXYZabcd<br>【Example Description】</p>
-<p>The input ADEa-g02 of example 1 is extended to adeabcdefg02,In the input T-bcd of example 2, because the ASCII value of B is larger than t, it also needs to be expanded, but only the English letters between T and b are expanded. The expansion result is tuvwxyzabcd.</p>
-<p>【Notes】</p>
-<p>The length of input and output strings should not exceed 100.</p>
-]]></content>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BUAA-SUMMER-PYTHON 第三次课上作业</title>
+      <link href="/2024/08/03/Summer_Python_3/"/>
+      <url>/2024/08/03/Summer_Python_3/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p><h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><ol><li><p>Which of the following options is not a reserved word in the Python programming language?<br>A. pass<br>B. while<br>C. do<br>D. except</p></li><li><p>Which of the following options does not comply with the variable naming rules in the Python programming language?<br>A. <em>33keyword<br>B. keyword_33<br>C. 33_keyword<br>D. keyword33</em></p></li><li><p>Regarding the eval function, which of the following options describes incorrectly:<br>A. The execution of eval(“Hello”) and eval(“ ‘Hello’ “) yields the same result.<br>B. The definition of the eval function is: eval(source, globals=None, locals=None, /)<br>C. If a user wants to input a number and perform calculations on it using a program, they can use the combination eval(input(&lt;输入提示字符串&gt;))<br>D. The purpose of the eval function is to convert the input string into a Python statement and execute that statement.</p></li><li><p>Given a dictionary d, which of the following options correctly describes d.get(x, y)?<br>A. Returns the value in dictionary d with key x, if it exists; otherwise, returns y.<br>B. Returns the value in dictionary d with value y, if it exists; otherwise, returns x.<br>C. Returns the value in dictionary d with key x, if it exists; otherwise, returns x.<br>D. Returns the value in dictionary d with key-value pair x:y.</p></li><li><p>The output result of the code below is:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 4</span><br><span class="line">a ^= 3</span><br><span class="line">b = a ^ 2</span><br><span class="line">print(a,end=&quot;,&quot;)</span><br><span class="line">print(b)```  </span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A. 64, 4096</span><br><span class="line">B. 4,3</span><br><span class="line">C. 5,7</span><br><span class="line">D. 7,5</span><br></pre></td></tr></table></figure></li></ol><h3 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h3><ol><li><p>Given x = {‘a’: ‘b’, ‘c’: ‘d’}, the value of the expression ‘a’ in x is     .</p></li><li><p>Given x = {‘a’: ‘b’, ‘c’: ‘d’}, the value of the expression ‘b’ in x.values() is      True     .</p></li><li><p>The value of the expression (1,3)+(5,7) is      (1, 3, 5, 7)     .(With () and commas)</p></li><li><p>For the list L=[2, 16, 36, 64], after executing L.insert(0,10), the value of L is      [10, 2, 16, 36, 64]     . (With [] and commas)</p></li><li><p>When executing the statement print(set([1,2,2,3])[3]), the reason for error in execution is      set is not subscriptable     . (index error/set is not subscriptable)</p></li></ol><h3 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h3><h4 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h4><p>【Description】</p><p>Give a series of dish names, output the menu after removing the duplicate dishes and sorting them in ascending order.</p><p>【Input】</p><p>A line of dish names separated by spaces indicates the recipe obtained.</p><p>【Output】</p><p>A line of dish names separated by spaces indicates the recipe after removing the duplicate.</p><p>【Example Input】</p><p>pizza donut hamburger chips hamburger donut juice<br>【Example Output】</p><p>chips donut hamburger juice pizza<br>【Notes】</p><p>Set () can convert a list into a collection,Consider using the set data type feature to remove duplicate elements</p><p>You can use. Join() to get a string that represents a list joined by spaces.</p><p>The list containing strings can also be sorted using the sort() method</p><h4 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h4><p>【Description】</p><p>Input the string containing the ‘-‘ extension from the keyboard, expand it into equivalent complete characters, for example, expand A-D to ABCD, and output the extended string.</p><p>Requirements: (1) The string to be extended contains at most one extender and no spaces(2) The characters before and after the extender must be in the range of [a-z], [A-Z] or [0-9] before extender expansion, and the extended characters must also be in this range. The ASCII code before the hyphen is smaller than that after the hyphen can be expand. In other cases, they will not be expanded and will be output as is. For example, 5-d will be extended to</p><p>56789ABCDEFGHIJKLMNOPQRSTUVWXYZabcd.<br>【Input】</p><p>Enter a string containing an extension from the keyboard</p><p>【Output】</p><p>Output extended string</p><p>【Example Input1】</p><p>ADEa-g02<br>【Example Output1】</p><p>ADEabcdefg02<br>【Example Input2】</p><p>T-bcd<br>【Example Output2】</p><p>TUVWXYZabcd<br>【Example Description】</p><p>The input ADEa-g02 of example 1 is extended to adeabcdefg02,In the input T-bcd of example 2, because the ASCII value of B is larger than t, it also needs to be expanded, but only the English letters between T and b are expanded. The expansion result is tuvwxyzabcd.</p><p>【Notes】</p><p>The length of input and output strings should not exceed 100.</p>]]></content>
+      
+      
       <categories>
-        <category>BUAA-SUMMER-PYTHON</category>
-        <category>课上</category>
+          
+          <category> BUAA-SUMMER-PYTHON </category>
+          
+          <category> 课上 </category>
+          
       </categories>
-  </entry>
-  <entry>
-    <title>BUAA-SUMMER-PYTHON 第二次课下作业</title>
-    <url>/2024/08/03/Summer_Python_2_under/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p>
-<hr>
-<p>title: BUAA-SUMMER-PYTHON 第二次课下作业<br>categories:</p>
-<pre><code>- BUAA-SUMMER-PYTHON
-- 课下
-</code></pre><hr>
-<h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>【Problem Description】<br>    A sequence of integers, where the first element is m and the second element is n, and each subsequent element after is the sum of the previous two elements. (-100≤n≤100, -100≤m≤100)<br>    For example, the sequence: 1, 1, 2, 3, 5, 8, 13, 21…<br>    Write a program that can take integer values m and n as input, solve the sequence, save the sequence in a list, calculates the sum of the first 20 elements, and outputs the total.<br>    【Input Format】<br>    The first line of input represents the value of m.<br>    The second line of input represents the value of n.<br>    【Output Format】<br>    Output the sum of the first 20 elements of the sequence. If the input data is not an integer number, output “illegal input”.<br>    【Input Sample】<br>        1<br>        1<br>    【Output Sample】<br>    17710</p>
-<h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>【Problem Description】<br>    There is a method to compare whether two programs are similar: extract the control structure information in the program according to the order of appearance to form a control flow string, and then calculate the similarity between the two programs according to the control flow string of the two programs.<br>Write a program to extract the control flow string of a C program. Only if, else, for, while, switch, case are considered, and other control flow words should be ignored. The processed C program satisfies:</p>
-<pre><code>1. Can be compiled by C;
-2. There may be multiple statements in one line;
-3. Comments, string constants and other identifiers do not contain control flow keyword strings;
-</code></pre><p>【Input Format】<br>    The C program to be processed is saved in the current directory, and the file name is: in.c.<br>【Output Format】<br>    Output control flow keyword strings to the out.txt file in the current directory in the order of appearance, without any separator between keywords.<br>    If there is no control flow keywords, output No answer to the file.<br>【Input Sample 1】<br>    Suppose the content of in.c in the current directory is:<br>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int n,a,c1,c2,i;</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;n);</span><br><span class="line">    c1=c2=0;</span><br><span class="line">    for ( i=0; i&lt;n; i++ )</span><br><span class="line">    &#123;</span><br><span class="line">        scanf(&quot;%d&quot;,&amp;a);</span><br><span class="line">        if ( a&gt;=0 )</span><br><span class="line">            c1++;</span><br><span class="line">        else</span><br><span class="line">            c2++;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%d %d&quot;,&amp;c1,&amp;c2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>    【Output Sample 1】<br>    The out.txt file will be created in the current directory and its content should be:</p>
-<pre><code>&gt;forifelse
-</code></pre><p>【Input Sample 2】<br>    If the in.c source program style in the current directory is not very good, the content is as follows:<br>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">int a,b,max,min;</span><br><span class="line">scanf(&quot;%d%d&quot;,&amp;a,&amp;b);</span><br><span class="line">if(a&gt;b)&#123;max=a;min=b;&#125;else if(a&lt;b)&#123;max=b;min=a;&#125;else&#123;max=min=a;&#125;</span><br><span class="line">printf(&quot;%d %d&quot;,max,min);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>【Output Sample 2】<br>    The out.txt file will be created in the current directory and its content should be:</p>
-<pre><code>&gt;ifelseifelse
-</code></pre><p>【Explanation】<br>    The source program in sample 1 contains three control flow keywords: for, if, and else.<br>    The source program in sample 2 contains four control flow keywords: if, else, if, else.<br>    Output them in order to out.txt.<br>    Hint: When reading identifiers from in.c, characters other than letters, numbers, and underscores can be used as identifier separators.</p>
-<h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>【Problem Description】<br>    Julius Caesar encryption method. This method selects an encryption key each time it encrypts, which is a number between 1 and 25, specifying the number of shifts when encrypting letters. For example, if the key is 3, then A is converted to D, Z is converted to C, and so on. The same rule applies to lowercase letters (see the example below), while other characters remain unchanged. Encrypt a file using this method.<br>    Hint: For uppercase letters, if the encryption key is ‘key’ (‘key’ is an integer), the conversion formula is ‘A’ + ( c - ‘A’ + key ) % 26.<br>    【Input Format】<br>    Enter an integer between 1 and 25 as the encryption key from standard input. Then, read the file “in.txt” in the current directory, which contains multiple lines of arbitrary characters and may include empty lines. Each text line is not longer than 80 characters.<br>    【Output Format】<br>    Encrypt the input file contents according to the method described above. Then, output the encrypted texts to the file “out.txt” in the current directory.<br>    【Sample Input】<br>    If the input key is 3 and the content of the “in.txt” file is as follows:</p>
- <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">c language is important.</span><br><span class="line">WO AI BEIJING TIANANMEN.</span><br><span class="line">YYH SZ DSZ DDSZ.</span><br></pre></td></tr></table></figure>
-<p>【Sample Output】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">The encrypted content of the &quot;out.txt&quot; file is as follows:</span><br><span class="line">f odqjxdjh lv lpsruwdqw.</span><br><span class="line">ZR DL EHLMLQJ WLDQDQPHQ.</span><br><span class="line">BBK VC GVC GGVC.</span><br></pre></td></tr></table></figure></p>
-<p>【Explanation】<br>    Encrypt the contents of the input file according to the input key and conversion formula, and output the results to the file “out.txt”.</p>
-<h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><p>【Problem Description】<br>    One monkey is to be selected as the king out of n monkeys. The following method is used to decide who becomes king:<br>    n monkeys form a circle and are assigned numbers from 1 to n in sequence. Starting from the qth monkey, they count from 1 to m, and the monkey that counts to m is eliminated. The next round starts from the monkey after the one that was eliminated, and repeats the counting from 1 to m. The process repeats until only one monkey is left. The last monkey becomes the king. Determine which monkey will be selected as the king.<br>    【Input Format】<br>    Enter three integers n, m, and q in the console.<br>    【Output Format】<br>    Output the assigned number of the monkey that was selected as king.<br>    【Input Sample】<br>    7 4 3<br>    【Output Sample】<br>    4<br>    【Explanation】<br>    By inputting the integers n = 7, m = 4, n = 3，we get the output integer 4 as result.</p>
-<h3 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h3><p>【Problem Description】<br>    Given n numbers k1, k2, …, kn, find the number of integer palindromes (回文数) in the range from not less than 10 to not more than 10^8 (one hundred million), that is divisible by all k1,k2,…,kn .<br>    【Input form】<br>    The first line, an integer n.<br>    The next n lines, each with a number representing ki.<br>    The meanings of n and ki can be referred to Problem description.<br>    【Output format】<br>    A palindrome number (integer) divisible by all k1,k2,…,kn, in the range from not less than 10 to not more than 10^8 per line. If there are more than one palindrome number, output all of them from small to large. If not, output “None” (without the double quotes).<br>    【Sample input 1】<br>    2<br>    998244353<br>    123456789<br>    【Sample output 1】<br>    None<br>    【Sample input 2】<br>    2<br>    114<br>    514<br>    【Sample output 2】<br>    65100156<br>    【Example description】<br>    Within the range, only 65100156 is a palindrome that is divisible by 114 and 514.<br>    【Data range】<br>    1&lt;=n&lt;=5, 1&lt;=k,n&lt;=1000</p>
-]]></content>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BUAA-SUMMER-PYTHON 第二次课下作业</title>
+      <link href="/2024/08/03/Summer_Python_2_under/"/>
+      <url>/2024/08/03/Summer_Python_2_under/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p><hr><p>title: BUAA-SUMMER-PYTHON 第二次课下作业<br>categories:</p><pre><code>- BUAA-SUMMER-PYTHON- 课下</code></pre><hr><h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>【Problem Description】<br>    A sequence of integers, where the first element is m and the second element is n, and each subsequent element after is the sum of the previous two elements. (-100≤n≤100, -100≤m≤100)<br>    For example, the sequence: 1, 1, 2, 3, 5, 8, 13, 21…<br>    Write a program that can take integer values m and n as input, solve the sequence, save the sequence in a list, calculates the sum of the first 20 elements, and outputs the total.<br>    【Input Format】<br>    The first line of input represents the value of m.<br>    The second line of input represents the value of n.<br>    【Output Format】<br>    Output the sum of the first 20 elements of the sequence. If the input data is not an integer number, output “illegal input”.<br>    【Input Sample】<br>        1<br>        1<br>    【Output Sample】<br>    17710</p><h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>【Problem Description】<br>    There is a method to compare whether two programs are similar: extract the control structure information in the program according to the order of appearance to form a control flow string, and then calculate the similarity between the two programs according to the control flow string of the two programs.<br>Write a program to extract the control flow string of a C program. Only if, else, for, while, switch, case are considered, and other control flow words should be ignored. The processed C program satisfies:</p><pre><code>1. Can be compiled by C;2. There may be multiple statements in one line;3. Comments, string constants and other identifiers do not contain control flow keyword strings;</code></pre><p>【Input Format】<br>    The C program to be processed is saved in the current directory, and the file name is: in.c.<br>【Output Format】<br>    Output control flow keyword strings to the out.txt file in the current directory in the order of appearance, without any separator between keywords.<br>    If there is no control flow keywords, output No answer to the file.<br>【Input Sample 1】<br>    Suppose the content of in.c in the current directory is:<br>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int n,a,c1,c2,i;</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;n);</span><br><span class="line">    c1=c2=0;</span><br><span class="line">    for ( i=0; i&lt;n; i++ )</span><br><span class="line">    &#123;</span><br><span class="line">        scanf(&quot;%d&quot;,&amp;a);</span><br><span class="line">        if ( a&gt;=0 )</span><br><span class="line">            c1++;</span><br><span class="line">        else</span><br><span class="line">            c2++;</span><br><span class="line">    &#125;</span><br><span class="line">    printf(&quot;%d %d&quot;,&amp;c1,&amp;c2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>    【Output Sample 1】<br>    The out.txt file will be created in the current directory and its content should be:</p><pre><code>&gt;forifelse</code></pre><p>【Input Sample 2】<br>    If the in.c source program style in the current directory is not very good, the content is as follows:<br>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">int a,b,max,min;</span><br><span class="line">scanf(&quot;%d%d&quot;,&amp;a,&amp;b);</span><br><span class="line">if(a&gt;b)&#123;max=a;min=b;&#125;else if(a&lt;b)&#123;max=b;min=a;&#125;else&#123;max=min=a;&#125;</span><br><span class="line">printf(&quot;%d %d&quot;,max,min);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>【Output Sample 2】<br>    The out.txt file will be created in the current directory and its content should be:</p><pre><code>&gt;ifelseifelse</code></pre><p>【Explanation】<br>    The source program in sample 1 contains three control flow keywords: for, if, and else.<br>    The source program in sample 2 contains four control flow keywords: if, else, if, else.<br>    Output them in order to out.txt.<br>    Hint: When reading identifiers from in.c, characters other than letters, numbers, and underscores can be used as identifier separators.</p><h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>【Problem Description】<br>    Julius Caesar encryption method. This method selects an encryption key each time it encrypts, which is a number between 1 and 25, specifying the number of shifts when encrypting letters. For example, if the key is 3, then A is converted to D, Z is converted to C, and so on. The same rule applies to lowercase letters (see the example below), while other characters remain unchanged. Encrypt a file using this method.<br>    Hint: For uppercase letters, if the encryption key is ‘key’ (‘key’ is an integer), the conversion formula is ‘A’ + ( c - ‘A’ + key ) % 26.<br>    【Input Format】<br>    Enter an integer between 1 and 25 as the encryption key from standard input. Then, read the file “in.txt” in the current directory, which contains multiple lines of arbitrary characters and may include empty lines. Each text line is not longer than 80 characters.<br>    【Output Format】<br>    Encrypt the input file contents according to the method described above. Then, output the encrypted texts to the file “out.txt” in the current directory.<br>    【Sample Input】<br>    If the input key is 3 and the content of the “in.txt” file is as follows:</p> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">c language is important.</span><br><span class="line">WO AI BEIJING TIANANMEN.</span><br><span class="line">YYH SZ DSZ DDSZ.</span><br></pre></td></tr></table></figure><p>【Sample Output】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">The encrypted content of the &quot;out.txt&quot; file is as follows:</span><br><span class="line">f odqjxdjh lv lpsruwdqw.</span><br><span class="line">ZR DL EHLMLQJ WLDQDQPHQ.</span><br><span class="line">BBK VC GVC GGVC.</span><br></pre></td></tr></table></figure></p><p>【Explanation】<br>    Encrypt the contents of the input file according to the input key and conversion formula, and output the results to the file “out.txt”.</p><h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><p>【Problem Description】<br>    One monkey is to be selected as the king out of n monkeys. The following method is used to decide who becomes king:<br>    n monkeys form a circle and are assigned numbers from 1 to n in sequence. Starting from the qth monkey, they count from 1 to m, and the monkey that counts to m is eliminated. The next round starts from the monkey after the one that was eliminated, and repeats the counting from 1 to m. The process repeats until only one monkey is left. The last monkey becomes the king. Determine which monkey will be selected as the king.<br>    【Input Format】<br>    Enter three integers n, m, and q in the console.<br>    【Output Format】<br>    Output the assigned number of the monkey that was selected as king.<br>    【Input Sample】<br>    7 4 3<br>    【Output Sample】<br>    4<br>    【Explanation】<br>    By inputting the integers n = 7, m = 4, n = 3，we get the output integer 4 as result.</p><h3 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h3><p>【Problem Description】<br>    Given n numbers k1, k2, …, kn, find the number of integer palindromes (回文数) in the range from not less than 10 to not more than 10^8 (one hundred million), that is divisible by all k1,k2,…,kn .<br>    【Input form】<br>    The first line, an integer n.<br>    The next n lines, each with a number representing ki.<br>    The meanings of n and ki can be referred to Problem description.<br>    【Output format】<br>    A palindrome number (integer) divisible by all k1,k2,…,kn, in the range from not less than 10 to not more than 10^8 per line. If there are more than one palindrome number, output all of them from small to large. If not, output “None” (without the double quotes).<br>    【Sample input 1】<br>    2<br>    998244353<br>    123456789<br>    【Sample output 1】<br>    None<br>    【Sample input 2】<br>    2<br>    114<br>    514<br>    【Sample output 2】<br>    65100156<br>    【Example description】<br>    Within the range, only 65100156 is a palindrome that is divisible by 114 and 514.<br>    【Data range】<br>    1&lt;=n&lt;=5, 1&lt;=k,n&lt;=1000</p>]]></content>
+      
+      
       <categories>
-        <category>BUAA-SUMMER-PYTHON</category>
-        <category>课下</category>
+          
+          <category> BUAA-SUMMER-PYTHON </category>
+          
+          <category> 课下 </category>
+          
       </categories>
-  </entry>
-  <entry>
-    <title>BUAA-SUMMER-PYTHON 第三次课下作业</title>
-    <url>/2024/08/03/Summer_Python_3_under/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p>
-<h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>【Problem Description】<br>Write a program that can input a three-digit positive integer and output the corresponding number in reverse order. If the input number is not a three-digit positive integer, output -1.</p>
-<p>【Input Format】<br>Input a three-digit positive integer.</p>
-<p>【Output Format】<br>Output the value of the number after reversing the digits.</p>
-<p>【Sample Input】</p>
-<p>356</p>
-<p>【Sample Output】</p>
-<p>653</p>
-<p>【Explanation】</p>
-<p>The positive integer value input is 356. Swapping the ones and hundreds digit gives the result 653. If the input positive integer is 300, then the output is 3.</p>
-<h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>【Problem Description】  </p>
-<p>Implement a simple calculator: Read two integer operands (data1 and data2) and an operator (op) from the console, and calculate the expression data1 op data2. The operator op can be one of the followings: +, -, *, or /.</p>
-<p>【Input Format】</p>
-<p>Input the operands and operator from the console:</p>
-<ol>
-<li><p>First, input two integers as the operands, separated by a space, representing data1 and data2.</p>
-</li>
-<li><p>Next, input a character as the operator op, which can be ‘+’, ‘-‘, ‘*’, or ‘/‘.</p>
-</li>
-</ol>
-<p>Leave a space between data1, data2, and op. Refer to the sample input for specific format.</p>
-<p>【Output Format】</p>
-<p>Output the result of the calculation to the console. If division is performed and the value is fully divisible, output the result as an integer. Otherwise, output the value rounded to two decimal places.</p>
-<p>【Sample Input】</p>
-<p>23 5 *<br>【Sample Output】</p>
-<p>115<br>【Explanation】</p>
-<p>In the input, the first operand is 23, the second operand is 5, and the operator is ‘*’. The calculator performs multiplication to the operands 23 and 5. The result is 115.</p>
-<h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>【Problem Description】</p>
-<p>Write a program to find the longest common substring between two input strings, s and t.</p>
-<p>【Input Format】</p>
-<p>Read the strings s and t from the console, each on a separate line. Both s and t can consist of any arbitrary characters, with lengths not exceeding 50 characters. The input data should only have one unique longest common substring. If there is no common substring, print “No Answer”.</p>
-<p>【Output Format】</p>
-<p>Print the longest common substring of s and t on a separate line, followed by a newline character.</p>
-<p>Algorithm hint: Use an integer counter to keep track of the current matching length and a character array to store the current matching substring. If a longer substring is found, update the counter and array accordingly.</p>
-<p>【Sample Explanation】</p>
-<p>Assume the following input is entered into the console:</p>
-<p>aabcdababce<br>12abcabcdace<br>The output is:</p>
-<p>abcda</p>
-<h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><p>【Problem Description】</p>
-<p>There are two rectangles, A and B, positioned arbitrarily on a plane. Write a program to calculate the area of their intersection (shaded region in the diagram). (0 ≤ a, b ≤ 1000)</p>
-<p>【Input Format】</p>
-<p>Read two lines from standard input, each containing four integers separated by spaces, in the following format:</p>
-<p>Ax1 Ay1 Ax2 Ay2</p>
-<p>Bx1 By1 Bx2 By2</p>
-<p>Here, (x1, y1) represents the coordinates of the top-left corner of the rectangle, and (x2, y2) represents the coordinates of the bottom-right corner. All coordinate values are integers ranging from 0 to 1000.</p>
-<p>【Output Format】</p>
-<p>Print an integer to standard output, which represents the area of the intersection between the two rectangles (can be 0). End the output with a newline character.</p>
-<p>【Sample Input】</p>
-<p>0 2 2 0<br>1 4 3 1<br>【Sample Output】</p>
-<p>1<br>【Explanation】</p>
-<p>The intersection area of the two rectangles is 1.</p>
-<h3 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h3><p>【Problem Description】</p>
-<p>Write a program to convert a general infix expression, composed of single-digit integers, into a postfix expression (Reverse Polish notation). Assume that the input is a valid expression.</p>
-<p>【Input Format】</p>
-<p>Input a valid infix expression (without spaces) and end the input with a newline character. The expression should have a maximum of 80 characters.</p>
-<p>【Output Format】</p>
-<p>Output the postfix expression.</p>
-<p>【Sample Input】</p>
-<p>(6+2)*5-8/4</p>
-<p>【Sample Output】</p>
-<p>62+5*84/-</p>
-<p>【Explanation】</p>
-<p>The input is a valid infix expression (without spaces), and the output is the corresponding postfix expression.</p>
-]]></content>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BUAA-SUMMER-PYTHON 第二次课上作业</title>
+      <link href="/2024/08/03/Summer_Python_2/"/>
+      <url>/2024/08/03/Summer_Python_2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p><h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><ul><li><p>Which of the below Python data type is mutable? <strong>_</strong><br>  A. Tuple<br>  B. String<br>  C. List<br>  D. Dictionary</p></li><li><p>Which Python built-in function is used to remove and return an element from a list? <strong>_</strong><br>  A. append()<br>  B. remove()<br>  C. pop()<br>  D. sort()</p></li><li><p>The following is a piece of code that sums up all the values in a dictionary and prints the result:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">d = &#123;&quot;a&quot;: 1,  &quot;b&quot;: 2,  &quot;c&quot;: 3&#125;</span><br><span class="line">total = ___</span><br><span class="line">print(total)</span><br></pre></td></tr></table></figure><p>  Please fill in the blanks in the code. <strong>_</strong><br>  A. sum(d)<br>  B. sum(d.values())<br>  C. sum(d.keys())<br>  D. sum(d.items())</p></li><li><p>In Python, which of the following option(s) can be used to sort the keys in a dictionary? <strong>_</strong><br>  A. dict.keys()<br>  B. dict.sort()<br>  C. sorted(dict)<br>  D. sort(dict.keys())</p></li></ul><ul><li>Which of the following option(s) can be used to merge the keys and values of a dictionary into a new string?Assuming that both the keys and values of the dictionary are strings. <strong>_</strong><br>  A. list(dict.merge())<br>  B. “”.join(list(dict))<br>  C. “”.join(list(dict.items()))<br>  D. “”.join(list(dict.keys()) + list(dict.values()))</li></ul><h3 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h3><h4 id="1"><a href="#1" class="headerlink" title="1"></a>1</h4><p>【Description】</p><p>Input the string containing the ‘-‘ extension from the keyboard, expand it into equivalent complete characters, for example, expand A-D to ABCD, and output the extended string.</p><p>Requirements: (1) the string to be extended contains at least one extender and does not contain spaces（ 2) It only deals with the character extension in the range of [a-z], [A-Z] and [0-9], that is, only when the characters before and after the extension are lowercase letters, uppercase letters or numbers at the same time, it can be extended. In other cases, it will not be extended and output as is. For example, strings such as a-R, D-e, 0-B, 4-b are not extended.<br>【Input】<br>Enter a string containing an extension from the keyboard<br>【Output】<br>Output extended string<br>【Example Input】<br>ADEa-g02<br>【Example Output】<br>ADEabcdefg02<br>【Notes】<br>The length of input and output strings should not exceed 100</p><h4 id="2"><a href="#2" class="headerlink" title="2"></a>2</h4><p>【Problem Description】</p><p>At the end of a semester, the head teacher Li Hua obtained the grades of each subject for the whole class. He wanted to calculate the average score of each subject (Chinese, Mathematics, English) for the whole class. However, he accidentally mixed up the scores. Please write a program in Python to help him fix the issue.</p><p>【Input form】</p><p>The first line, an integer n, represents the number of people in the class.</p><p>For the next 3n lines, each line represents a student’s grades for a course. The format each line consists of two parameters, a and b, separated by a space in between. Parameter a is a floating-point number representing the scorer of the exam. Parameter b is a string (Chinese, Math, English) representing the subject.</p><p>It is guaranteed that each student has one and only one score for each subject. Hence in the above data, Chinese, Math, and English will only appear n times each for n number of students.</p><p>【Output format】</p><p>Three lines, each line with a floating-point number (two digits), are the average scores for Chinese, Mathematics, and English.</p><p>【Sample input】<br>3<br>100.0 Chinese<br>100.0 Math<br>90.5 English<br>90.5 Math<br>89.5 Chinese<br>99.5 Chinese<br>60.0 English<br>80.0 Math<br>72.5 English</p><p>【Example output】</p><p>96.33<br>90.17<br>74.33</p><p>【Example description】</p><p>For the above inputs, the average score for Chinese is 96.33, the average score for mathematics is 90.17, and the average score for English is 74.33</p><p>【Data range】<br>1&lt;=n&lt;=30000, 0&lt;=a&lt;=100, b∈{‘Chinese’, ‘Math’, ‘English’}</p>]]></content>
+      
+      
       <categories>
-        <category>BUAA-SUMMER-PYTHON</category>
-        <category>课下</category>
+          
+          <category> BUAA-SUMMER-PYTHON </category>
+          
+          <category> 课上 </category>
+          
       </categories>
-  </entry>
-  <entry>
-    <title>BUAA-SUMMER-PYTHON 第四次课下作业</title>
-    <url>/2024/08/03/Summer_Python_4_under/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p>
-<h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>【Problem Description】</p>
-<p>Sort the grades for a class of students. </p>
-<p>Input the names and grades of the students (maximum of 50 students in a class) into the console, and then output the names and grades of the students in descending order of their grades. If two students have the same grade, they are to be sorted according to the order of input.</p>
-<p>【Input Format】</p>
-<p>Input the names and grades of the students into the console:</p>
-<ol>
-<li><p>The first line contains the number of students in the class.</p>
-</li>
-<li><p>Each subsequent line contains the name and grade of a student, separated by a space. The grade must be an integer number.</p>
-</li>
-</ol>
-<p>【Output Format】</p>
-<p>Output the names and grades of the students in descending order of their grades. Each line should contain the name in English characters (with 15 string padding) and grade (with 5 string padding), aligned according to the default format. If two students have the same grade, they are sorted according to the order of input.</p>
-<p>【Sample Input】</p>
-<p>4<br>aaa 50<br>bbb 70<br>ccc 65<br>ddd 90</p>
-<p>【Sample Output】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">############ddd###90</span><br><span class="line">############bbb###70</span><br><span class="line">############ccc###65</span><br><span class="line">############aaa###50</span><br></pre></td></tr></table></figure><br>(Note: The “#” sign represents a space)</p>
-<p>【Explanation】</p>
-<p>The names and grades of four students are input into the console, and the program outputs the grades in descending order.</p>
-<h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>2.(509664)</p>
-<p>【Problem Description】<br>Write a program to count the maximum nesting level of curly braces in a given C source code and output the nested sequence of curly braces. The source code does not contain any syntax errors.<br>Note:</p>
-<ol>
-<li><p>Curly braces within comments (/<em> … </em>/) should be ignored and not counted.</p>
-</li>
-<li><p>Curly braces will not appear within string literals in the source code.</p>
-</li>
-</ol>
-<p>【Input Format】</p>
-<p>The C source code file to be processed is named input.c and located in the current directory.</p>
-<p>【Output Format】</p>
-<p>Output the maximum nesting level of curly braces on the console, followed by the sequence of curly braces in the order of their appearance on a new line.</p>
-<p>【Sample Input】</p>
-<p>Suppose the content of the input.c file in the current directory is:<br>【Sample Output】</p>
-
-3
-{{{}{}}}
-
-<p>The maximum nesting level of curly braces in the source code input.c is 3, so the output is 3. </p>
-<p>【Explanation】</p>
-<p>Then, output the curly braces in the order of their appearance, ignoring the braces within comments, which gives the sequence: {{{}{}}}.</p>
-<h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>【Problem Description】</p>
-<p>Input a line of string consisting of only lowercase English letters (a-z), where characters may be repeated, and the length of the string does not exceed 10000 characters. </p>
-<p>From this string, select a certain number of characters in order (not necessarily adjacent) to form a new string, called a “sub-sequence.” If every two adjacent characters in the sub-sequence string are either equal or the later character is greater than the previous one, it is called an “ascending subsequence.” Write a program to find the length of the longest ascending sub-sequence string in the input string.</p>
-<p>For example, for the input string “abdbch,” the ascending sub-sequences that can be formed are: “abd,” “abch,” “bbch,” “abbch,” and so on. Among them, the longest ascending sub-sequence string is “abbch,” with a length of 5.</p>
-<p>【Input Format】</p>
-<p>Read a line of string from console. The string should not contain any spaces and must end with a newline character.</p>
-<p>【Output Format】</p>
-<p>Print a positive integer to console, which is the length of the longest ascending sub-sequence string. End the line with a newline character.</p>
-<p>【Sample Input】</p>
-<p>abdbch<br>【Sample Output】</p>
-<p>5<br>【Explanation】</p>
-<p>In the input string “abdbch”, the longest ascending sub-sequence string is “abbch”, with a length of 5.</p>
-<h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><p>【Problem Description】</p>
-<p>(Hint:The difficulty of this question is not high, but the text of the question is long, please answer patiently.)</p>
-<p>On a computer screen, there are N windows. The points on the boundaries of the windows also belong to the respective windows. The windows have different levels of hierarchy, and only the content of the top-most window in the overlapping area of multiple windows is displayed. When you click on a point of the screen using a mouse, if it falls within a window, you will have selected the top-most window to which the clicked position belongs, and this particular window will be moved to the top of all other windows while maintaining the order of the remaining windows. If you click on a position that does not belong to any window, the system will ignore the click. Write a program to simulate the process of clicking on windows: first, read from the standard input to get the number of windows on the screen, each window’s stacking order and position on screen (represented by the coordinates of the lower-left and upper-right corners of the windows, with higher-level windows input first), then input the number of clicks, and starting from the subsequent lines, input two integers representing the coordinates of the clicked positions. Write a program to determine the stacking order of windows after the clicks.</p>
-<p>Assumptions:</p>
-<p>(1) The lower-left corner of the screen is taken as the origin of the X and Y coordinates, i.e., (0, 0). All input coordinate values are integers and are greater than or equal to 0 and less than or equal to 1000.</p>
-<p>(2) The output for the window stacking sequence starts from the window number of the top-level window after the last click, and each number is separated by a space. The last space after the last number is optional.</p>
-<p>(3) The number of windows is greater than 0 and less than or equal to 10, and the number of clicks is greater than 0 and less than or equal to 20.</p>
-<p>【Input Format】</p>
-<p>First, input the number of windows, and then starting from subsequent new lines, input five integers representing the window number, the horizontal and vertical coordinates of the bottom-left corner, and the horizontal and vertical coordinates of the top-right corner, separated by a single space. Then input the number of clicks, and then starting from subsequent new lines, input two integers representing the horizontal and vertical coordinates of each click, separated by a single space. After the last pair of coordinates is input, give a newline character.</p>
-<p>【Output Format】</p>
-<p>Output the stacking sequence of each window starting from the window number of the top-level window after the last click. Each window number should be separated by a space. The last space after the last number is optional.</p>
-<p>【Sample Input】</p>
-<p>4<br>1 43 31 70 56<br>2 50 24 80 50<br>3 23 13 63 42<br>4 57 36 90 62<br>5<br>47 28<br>73 40<br>60 38<br>72 52<br>35 56<br>【Sample Output】</p>
-<p>4 2 3 1<br>【Explanation】</p>
-<p>For the given input, there are 4 windows on the screen. The top-most window has the bottom-left and top-right coordinates (43, 31) and (70, 56), with a window number of 1. The subsequent windows have the bottom-left and top-right coordinates (50, 24) and (80, 50), (23, 13) and (63, 42), (57, 36) and (90, 62), with window numbers 2, 3, and 4, respectively. The first click is at coordinates (47, 28), which falls on window number 3. So, window number 3 becomes the new top-level window, and the stacking sequence becomes (3, 1, 2, 4). The second click is at (73, 40), which falls within the overlapping area of window numbers 2 and 4. As window number 2 is above window number 4, the click is registered on window number 2, which window 2 becomes the new top-level window. The stacking sequence is now (2, 3, 1, 4). The third click is at (60, 38), which is within the overlapping area of all windows. Since it falls within the top-level window number 2, the stacking sequence remains unchanged. The fourth click is at (72, 52), which falls only within window number 4. So, window number 4 becomes the new top-level window, and the stacking sequence becomes (4, 2, 3, 1). The fifth click is at (35, 56), which does not belong to any window. Therefore, the stacking sequence remains unchanged. In the end, window number 4 is the top-level window, followed by window number 2, 3, and 1.</p>
-<h3 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h3><p>【Background】</p>
-<p>The eight queens problem is an old and famous one. There are eight queens on an 8*8 grid chess table. Queens can’t attack each other, that is, any two Queens can’t be in the same row, the same column or the same diagonal line. How many kinds of scenarios are there.</p>
-<p>After learning the content of this week’s course, Xiaoming has worked out 92 solutions to the eight queens problem in Python, but he has a new question: assuming that a queen has been placed on the chessboard, how many ways can the rest queens put?</p>
-<p>【Description】</p>
-<p>For the extension of the eight queens problem, given the position of one queen in the chessboard, how many ways can the other seven queens put?</p>
-<p>【Input】</p>
-<p>One line, two integers x, y. Represents the row and column values of a given queen.</p>
-<p>【Output】</p>
-<p>A row, an integer, the number of pendulums of the remaining seven queens given a queen’s position.</p>
-<p>【Example Input】</p>
-<p>1 1<br>【Example Output】</p>
-<p>4<br>【Example Description】</p>
-<p>There are four pendulum methods</p>
-<p>example1:</p>
-<p>X O O O O O O O </p>
-<p>O O O O X O O O </p>
-<p>O O O O O O O X </p>
-<p>O O O O O X O O </p>
-<p>O O X O O O O O </p>
-<p>O O O O O O X O </p>
-<p>O X O O O O O O </p>
-<p>O O O X O O O O </p>
-<p>example2:</p>
-<p>X O O O O O O O </p>
-<p>O O O O O X O O </p>
-<p>O O O O O O O X </p>
-<p>O O X O O O O O </p>
-<p>O O O O O O X O </p>
-<p>O O O X O O O O </p>
-<p>O X O O O O O O </p>
-<p>O O O O X O O O</p>
-<p>example3:</p>
-<p>X O O O O O O O </p>
-<p>O O O O O O X O </p>
-<p>O O O X O O O O </p>
-<p>O O O O O X O O </p>
-<p>O O O O O O O X </p>
-<p>O X O O O O O O </p>
-<p>O O O O X O O O </p>
-<p>O O X O O O O O </p>
-<p>example4:</p>
-<p>X O O O O O O O </p>
-<p>O O O O O O X O </p>
-<p>O O O O X O O O </p>
-<p>O O O O O O O X </p>
-<p>O X O O O O O O </p>
-<p>O O O X O O O O </p>
-<p>O O O O O X O O </p>
-<p>O O X O O O O O </p>
-]]></content>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BUAA-SUMMER-PYTHON 第一次课下作业</title>
+      <link href="/2024/08/03/Summer_Python_1_under/"/>
+      <url>/2024/08/03/Summer_Python_1_under/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p><h2 id="2025年第一次课下作业"><a href="#2025年第一次课下作业" class="headerlink" title="2025年第一次课下作业"></a>2025年第一次课下作业</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>【Description】</p><p>Gives two integers a and b as input, returns the value of a+b+a*b.</p><p>【Input】</p><p>A line contains two integers, separated by space, representing a and b.</p><p>【Output】</p><p>An integer, the value of a+b+a*b.</p><p>【Examples Input】</p><blockquote><p>1 1</p></blockquote><p>【Examples output】</p><blockquote><p>3</p></blockquote><p>【Example description】</p><blockquote><p>1+1+1*1=3</p></blockquote><p>【Notes】</p><p>For 100% of test cases, a,b in [1, 10000].</p><hr><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>【Description】</p><p>Given two strings s and t, returns the number of times that t appears in s. Note that each character cannot be calculated twice.</p><p>【Input】</p><p>Two lines, string s and t.</p><p>【Output】</p><p>If s contains t, outputs the number of times that t appears in s. Otherwise outputs False.</p><p>【Example Input1】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">abababa</span><br><span class="line"></span><br><span class="line">aba</span><br></pre></td></tr></table></figure></p><p>【Example Output1】</p><blockquote><p>2</p></blockquote><p>【Example Input2】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ab</span><br><span class="line"></span><br><span class="line">aba</span><br></pre></td></tr></table></figure></p><p>【Example Output2】</p><blockquote><p>False</p></blockquote><p>【Notes】</p><p>The question is to count how many T does s have, not how many T appear in S</p><hr><h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>【Description】</p><p>Xiaoyu is swimming happily, but she is soon sad to find that her strength is not enough, swimming is very tired. It is known that Xiaoyu can swim 2 meters in the first step, but as she gets more and more tired, her strength becomes smaller and smaller, and her next step can only swim 98% of the distance of the previous step. Now Xiaoyu wants to know how many steps she needs to swim to a distance of X meters. Please program to solve this problem.</p><p>【Input】</p><p>target distance to swim.</p><p>【Output】</p><p>how many steps Xiaoyu needs to swim</p><p>【Example Input】</p><blockquote><p>4.3</p></blockquote><p>【Example Output】</p><blockquote><p>3</p></blockquote><p>【Notes】</p><p>target distance &lt;=100-1e^-8, and may not be an integer</p><hr><p>Chinese Citizen ID</p><p>【Problem Statement】</p><p>Chinese Citizen ID has 18 digits. The first 6 digits show where the citizen lives. The next 8 digits show the citizen’s birthday (YYYYMMDD), and followed by 3 digits of serial number. The last digit is a checksum (0,1,2,3,4,5,6,7,8,9, or letter X).</p><p>To calculate the checksum $\sum_{i=1}^{17} (a_i*b_i)$ , you need to calculate , where $a_i$ is the i-th digit of the Citizen ID, and $b_i$ is given in the table below.</p><div class="table-container"><table><thead><tr><th>i</th><th>$b_i$</th></tr></thead><tbody><tr><td>1</td><td>7</td></tr><tr><td>2</td><td>9</td></tr><tr><td>3</td><td>10</td></tr><tr><td>4</td><td>5</td></tr><tr><td>5</td><td>8</td></tr><tr><td>6</td><td>4</td></tr><tr><td>7</td><td>2</td></tr><tr><td>8</td><td>1</td></tr><tr><td>9</td><td>6</td></tr><tr><td>10</td><td>3</td></tr><tr><td>11</td><td>7</td></tr><tr><td>12</td><td>9</td></tr><tr><td>13</td><td>10</td></tr><tr><td>14</td><td>5</td></tr><tr><td>15</td><td>8</td></tr><tr><td>16</td><td>4</td></tr><tr><td>17</td><td>2</td></tr></tbody></table></div><p>Then, caculate s%11 (s mod 11), and the checksum is shown in the table below:</p><div class="table-container"><table><thead><tr><th style="text-align:center">s%11</th><th style="text-align:center">checksum (last digit of Citizen ID)</th></tr></thead><tbody><tr><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">2</td><td style="text-align:center">X</td></tr><tr><td style="text-align:center">3</td><td style="text-align:center">9</td></tr><tr><td style="text-align:center">4</td><td style="text-align:center">8</td></tr><tr><td style="text-align:center">5</td><td style="text-align:center">7</td></tr><tr><td style="text-align:center">6</td><td style="text-align:center">6</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center">5</td></tr><tr><td style="text-align:center">8</td><td style="text-align:center">4</td></tr><tr><td style="text-align:center">9</td><td style="text-align:center">3</td></tr><tr><td style="text-align:center">10</td><td style="text-align:center">2</td></tr></tbody></table></div><p>Li Hua has got all his classmates’ Chinese citizen ID from his teacher, but he doesn’t know the rules above, and he needs to check how many of his classmates is over 18 years old, and how many student has made a typo inputting their ID. Please solve his problem by writing a program in Python.</p><p>You only need to check if the checksum is correct according to the rules, and how many people is over 18 years old.</p><p>Note: if the student has an invalid checksum and is over 18 years old, the student should also be counted.</p><p>【Input Format】<br>The first line, 1 integer n, shows how many classmates he has got.<br>The second line, 3 integers y m d separated by space, gives a date (year, month, day).<br>Then followed by n lines, each line has a 18-Digits ID, shows Li Hua’s classmates’ ID (All digits or letter ‘X’, ‘X’ will alwasy be capitalized).</p><p>【Output Format】</p><p>One line, two integers x y separated by space, where x is the number of classmates that is over 18 years old at the given date, and y is the number of classmates has a incorrect checksum in their IDs.</p><p>【Sample Input】</p><p>3</p><p>2018 1 1</p><p>11010120000101001X</p><p>114514191908100028</p><p>111111201712310034</p><p>【Sample Output】</p><p>2 1</p><p>【Sample Explanation】</p><p>11010120000101001X has a faulty checksum, the last digit should be 0. This student is over 18 years old.</p><p>114514191908100028 has a correct checksum and is over 18 years old.</p><p>111111201712310034 has a correct checksum and is under 18 years old.</p><p>【Data】</p><p>1&lt;=n&lt;=30000.</p><p>All dates is no later than 9999-12-31 and is valid.</p><p>All ID has an valid birth date. However, its checksum may or may not be correct.</p><hr><h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>【Background】</p><p>Nyima’s work and rest are very irregular.  He often sleeps until 3 p.m., so it takes him a long time to send messages back and forth. There are too many messages in various group chats. He just wants to reply to his content. Please help him filter the messages.</p><p>【Description】</p><p>Given n lines of messages as input, it is required to filter out the messages containing @ all and @ nyima from the messages, first output all the messages of @ all (the messages are sorted in ascending order according to dictionary order), and then output all the messages of @ nyima (the messages are sorted in descending order according to dictionary order)</p><p>【Input】</p><p>Several lines, each line represents a message (the whole line is the content of the message, including the part before the colon)</p><p>Ensure that the last line, no new messages, represents the end of input, and the last line is not included in the message</p><p>【Output】</p><p>Each line outputs a message, indicating the filtered information. Pay attention to sorting according to the requirements in the title description</p><p>【Example Input】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xuemei: zhujiao gege, I don&#x27;t know how to use python @nyima</span><br><span class="line">hwjj: @all dajiji de ti zen me hai mei chu hao</span><br><span class="line">roommate: so glad to hear that 20ers will have junxun in august</span><br><span class="line">no new messages</span><br></pre></td></tr></table></figure><br>【Example Output】<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hwjj: @all dajiji de ti zen me hai mei chu hao</span><br><span class="line">xuemei: zhujiao gege, I don&#x27;t know how to use python @nyima</span><br></pre></td></tr></table></figure><br>【Notes】</p><ul><li>Data limit: 1 &lt; = the number of filtered messages &lt; = the total number of messages &lt; = 50. If this condition is met, the number of @ all messages or @ nyima messages may be 0 (at this time, no extra empty lines can be output)</li><li>There is no message containing both @ all and @ nyima</li></ul>]]></content>
+      
+      
       <categories>
-        <category>BUAA-SUMMER-PYTHON</category>
-        <category>课下</category>
+          
+          <category> BUAA-SUMMER-PYTHON </category>
+          
+          <category> 课下 </category>
+          
       </categories>
-  </entry>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BUAA-SUMMER-PYTHON 第一次课上作业</title>
+      <link href="/2024/08/02/Summer_Python_1/"/>
+      <url>/2024/08/02/Summer_Python_1/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这是2024-BUAA-Python 课程的一些经验分享。<br>该网页含有课上和课下题目，没有题解。如要看题解（笨笨我写的，不是很好），可以移步<a href="https://github.com/Afeii1/BUAA_Summer_Python">https://github.com/Afeii1/BUAA_Summer_Python</a></p><h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><ul><li><p>Which option is the result of  100//3?<br>A. 33<br>B. 34<br>C. 33.333333333333333<br>D. 0.333333333333333</p></li><li><p>x is a two-digit integer variable. Which statement swaps its tens and units digits?<br>A (x%10)<em>10+x%10<br>B (x%10)</em>10+x//10<br>C (x/10)%10+x%10<br>D (x/10)%10+x//10</p></li><li><p>The output of the following code is （）;</p> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a,b,c,d,e,f = &#x27;Python&#x27;</span><br><span class="line">b = </span><br></pre></td></tr></table></figure><p>  A.1<br>  B.0<br>  C.Error<br>  D.’y’</p></li><li><p>Which of the following statements is illegal in Python ()?<br>  A. x = y = z = 1<br>  B. x = (y = z + 1)<br>  C. x, y = y, x<br>  D. x += y</p></li><li><p>Which of the following statements about Python’s floating-point type is wrong ?</p><p>  A. There are two ways to represent floating-point numbers: decimal notation and scientific notation</p><p>  B. The floating-point type is consistent with the concept of real numbers in mathematics, representing values with decimals</p><p>  C. sys.float_info can list in detail the floating-point parameters of the system where the Python interpreter runs</p><p>  D. Floating-point numbers in the Python language can be without decimals</p></li></ul><h3 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h3><ol><li><p>The result of the Python statement ‘’.join(list(‘hello BUAA!’)) is<em>__</em>!     </p></li><li><p>In Python, modules can be imported using the keyword       <em>_</em> .</p></li><li><p>In Python, statement blocks are divided by <em>_</em>. (indentation/brace/line breaks)</p></li><li><p>The output of excuting the code blow is <em>__</em><br> tmp = ‘ab’ + ‘c’*2<br> print(tmp)</p></li><li>Consider the following code snippet:<br>x = [1, 2, 3, 4]<br>y = [num * 2 for num in x]<br>The value of y after execution is <em>_</em>   .</li></ol><h3 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h3><ol><li>平方和<br>【Description】<br>The user inputs a positive integer n . Calculate the sum of squares from 1 to n  (1^2 + 2^2 + ….+ n^2).<br>【Input】<br>A line contains an integer n.<br>【Output】<br>The result of the sum of squares from 1 to n<br>【Examples Input】<br>3<br>【Examples output】<br>14<br>【Example description】<br>1^2 + 2^2 + 3^2 = 14<br>【Notes】<br>For 100% of test cases, a,b in [1, 10000].</li><li><p>Calculate GPA<br> 【Problem Description】<br> Li Hua is a student of Beihang University. Can you help him calculate his GPA this semester using Python?</p><p> To calculate GPA, you need to use the following method:<br> First, ignore all courses with less than 1 credit (not including 1).<br> Then, calculate the grade point for each course: Assume x is the original score of the course,<br>$GP = \begin{cases}<br>4 - 3 \cdot \frac{(100-x)^2}{1600} &amp; \text{if } x \geq 60 \<br>\newline<br>0 &amp; \text{if } 0 \leq x &lt; 60<br>\end{cases}$<br> Next, you need to know how many credits were given for each courses.<br> After calculating all the steps above, you need to calculate $ GPA = \frac {\sum(GP_i * Gredit_i)}{\sum Gredit_i} $, where credit and GP is given above.<br> 【Input】<br> First line, an integer N, tells how many courses Li Hua has taken this semester.<br> Then followed by two lines, each line 2 numbers (integer or float) X C separated by space. The first integer X is the original score of the course, and the second num C is the credit for the course.<br> 【Output】<br> A floating point rounded to 2 decimals, which is the GPA.<br> 【Sample Input】<br> 4<br> 100 1<br> 60 1<br> 0 1<br> 90 0.2<br> 【Sample Output】<br> 1.67<br> 【Sample Description】<br> The first course has a GP of 4.0, the second course has a GP of 1.0, and the third course has a GP of 0. The fourth course does not count at all.<br> GPA=(4.0+1.0+0)/(1+1+1)=1.67<br> 【Data】<br> 1&lt;=N&lt;=1000, N is integer.<br> 0&lt;=X&lt;=100, X is integer.<br> 0&lt;=C&lt;=6, C is float or integer.<br> All data satisfy that there is at least one class has more than 1 credit.</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> BUAA-SUMMER-PYTHON </category>
+          
+          <category> 课上 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
